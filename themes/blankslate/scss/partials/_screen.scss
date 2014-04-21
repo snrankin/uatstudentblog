@@ -1,5 +1,42 @@
+@import "desktop";
+
 *{
 	@include box-sizing(border-box);
 	font-family: Arial, Helvetica, sans-serif;
 }
+body, html{
+	padding: 0; 
+	margin: 0;
+	background: url(imgs/grey.png);
+	font-size: 100%;
+	font-size: 16px;
+	line-height: 1.5;
+}
+@font-face {
+    font-family: 'AlternateGotNo3D';
+    src: url('fonts/AlternateGotNo3D/alternategotno3d-webfont.eot');
+    src: url('fonts/AlternateGotNo3D/alternategotno3d-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/AlternateGotNo3D/alternategotno3d-webfont.woff') format('woff'),
+         url('fonts/AlternateGotNo3D/alternategotno3d-webfont.ttf') format('truetype'),
+         url('fonts/AlternateGotNo3D/alternategotno3d-webfont.svg#alternategotno3dregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
+
+h1, h2, h3, h4, h5{
+	font-weight: normal;
+	margin-top: 0;
+	padding-top: 0;
+	font-family: 'AlternateGotNo3D';
+	a{
+		font-family: 'AlternateGotNo3D';
+	}
+}
+.screen-reader-text{
+	display: none;
+}
+a{
+	color: #9d1c35;
+	text-decoration: none;
+}

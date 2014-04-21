@@ -5,6 +5,7 @@ function blankslate_setup()
 load_theme_textdomain( 'blankslate', get_template_directory() . '/languages' );
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'post-thumbnails' );
+add_theme_support('html5', array('search-form')); 
 global $content_width;
 if ( ! isset( $content_width ) ) $content_width = 640;
 register_nav_menus(
@@ -16,6 +17,21 @@ function blankslate_load_scripts()
 {
 wp_enqueue_script( 'jquery' );
 }
+function my_search_form( $form ) {
+    $form = '<form role="search" method="get" id="searchform" class="searchform" action="' . home_url( '/' ) . '" >
+    <div><label class="screen-reader-text" for="s">' . __( 'Search for:' ) . '</label>
+	<i class="fa fa-search"></i>
+    <input type="text" value="' . get_search_query() . '" name="s" id="s" />
+    </div>
+    </form>';
+
+    return $form;
+}
+
+add_filter( 'get_search_form', 'my_search_form' );
+
+add_filter( 'widget_text', 'shortcode_unautop');
+add_filter( 'widget_text', 'do_shortcode');
 add_action( 'comment_form_before', 'blankslate_enqueue_comment_reply_script' );
 function blankslate_enqueue_comment_reply_script()
 {

@@ -1,0 +1,63 @@
+@import "navbar";
+
+#wrapper{
+	width: 100%;
+}
+
+.inner{
+	@include pie-clearfix;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+#header{
+	width: 100%;
+	height: 400px;
+	background: url('imgs/uat.jpg');
+	background-size: cover;
+	#site-title{
+		a{
+			font-family: 'AlternateGotNo3D';
+			color: #F0F0F0;
+			font-size: 5em;
+			text-decoration: none;
+			position: relative;
+			top: 100px;
+		}
+	}
+	#site-description{
+		display: block;
+		color: #FFF;
+		font-size: 1.5em;
+		padding: 0.5em 1em;
+		position: relative;
+		top: 150px;
+		background-color: #000;
+		opacity: .75;
+		width: auto;
+	}
+}
+#content{
+	float: left;
+	width: 70%;
+	padding: 2.5em;
+	background-color: #FFF;
+	border-left: solid 1px #F2F2F2;
+	.post{
+		margin-top: 2em;
+		border-top: solid 1px #CCC;
+		.postdate{
+			display: block;
+			text-align: center;
+			background-color: #CCC;
+			color: #555;
+			width: 130px;
+			float: right;
+		}
+		.fa {color: #555;}		
+	}
+}
+#sidebar{
+	float: left;
+	width: 30%;
+	background-color: #F2F2F2;
+}

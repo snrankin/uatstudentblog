@@ -1,0 +1,508 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Aspen Themeworks Slider</title>
+<style type="text/css">
+body {
+	background: #eeeeee;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 10px; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	background-color: #ffd;
+}
+
+/* everything about each major block on the site - may be mods in some places */
+
+#container {
+	max-width:800px;
+	background-color: #00CC00;
+}
+#mainContent {
+	background-color: #ffc;
+}
+.oneColFixCtr #container {
+	max-width: 750px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFCD;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+.oneColFixCtr #mainContent {
+	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	font-size:12px;
+}
+/* layouts for layout boxes */
+.layoutbox {
+	width:700px;
+	text-align:center;
+	margin:0 25px;
+}
+.l_layout {
+	display:block;
+	width:140px;
+	height:110px;
+	float:left;
+	margin-right:10px;
+	margin-bottom:10px;
+	display:inline;
+	border:1px solid #888;
+	color:black;
+	text-align:center;
+	font:15px arial, sans-serif;
+}
+.l_layout span {
+	display:block;
+}
+.l_header {
+	width:140px;
+	height:20px;
+	background:#CCF;
+	line-height:20px;
+}
+.l_content {
+	width:100px;
+	height:70px;
+	background:beige;
+	float:left;
+	display:inline;
+	line-height:70px;
+}
+.l_contentcenter {
+	width:60px;
+	height:70px;
+	background:beige;
+	float:left;
+	display:inline;
+	line-height:70px;
+}
+.l_content2 {
+	width:80px;
+	height:70px;
+	background:beige;
+	float:left;
+	display:inline;
+	line-height:70px;
+}
+.l_contentw {
+	width:140px;
+	height:70px;
+	background:beige;
+	float:left;
+	display:inline;
+	line-height:70px;
+}
+.l_stdbar {
+	width:40px;
+	height:70px;
+	float:left;
+	display:inline;
+}
+.l_widebar {
+	width:60px;
+	height:70px;
+	float:left;
+	display:inline;
+}
+.l_righttop {
+	width:40px;
+	height:20px;
+	background:#FE8;
+	float:left;
+	display:inline;
+	line-height:20px;
+}
+.l_righttopwide {
+	width:60px;
+	height:20px;
+	background:#FE8;
+	float:left;
+	display:inline;
+	line-height:20px;
+}
+.l_rightup {
+	width:40px;
+	height:25px;
+	margin:0;
+	background:#FAA;
+	float:left;
+	display:inline;
+	line-height:25px;
+}
+.l_rightright {
+	width:40px;
+	height:50px;
+	margin:0;
+	background:#FAA;
+	float:left;
+	display:inline;
+	line-height:50px;
+}
+.l_rightdown {
+	width:40px;
+	height:25px;
+	margin:0;
+	background:#AFA;
+	float:left;
+	display:inline;
+	line-height:25px;
+}
+.l_leftleft {
+	width:40px;
+	height:70px;
+	margin:0;
+	background:#AFA;
+	float:left;
+	display:inline;
+	line-height:70px;
+}
+.l_leftshort {
+	width:30px;
+	height:50px;
+	margin:0;
+	background:#AFA;
+	float:left;
+	display:inline;
+	line-height:50px;
+}
+.l_skinny {
+	width:30px;
+	height:50px;
+	margin:0;
+	background:#FAA;
+	float:left;
+	display:inline;
+	line-height:50px;
+}
+.l_footer {
+	clear:left;
+	width:140px;
+	height:20px;
+	background:#DDF;
+	color:#000;
+	line-height:20px;
+}
+h4 {
+	font-weight: bold;
+	font-style:italic;
+	color: #000066;
+	text-decoration: underline;
+}
+h3 {
+	font-size: medium;
+	font-weight: bold;
+	color: #000066;
+	text-decoration: underline;
+}
+h2 {
+	font-size: large;
+	font-weight: bold;
+	color: #000066;
+	text-decoration: underline;
+	margin-top: 40pt;
+}
+h1 {
+	font-size: x-large;
+	font-weight: bold;
+	color: #000066;
+	text-decoration: underline;
+}
+.codebox {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 10px;
+	font-style: normal;
+	background-color: #E8E8E8;
+	margin: 10px;
+	padding: 4px;
+	border: 1px solid #333333;
+	color: #000000;
+	width: 80%;
+}
+.attrs {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color:#000000;
+	text-decoration: none;
+}
+.css {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 9pt;
+	font-style: normal;
+}
+.box {
+	color: #000000;
+	text-decoration: none;
+	margin: 5px;
+	padding: 5px;
+	border: thin solid #000000;
+}
+.nospace {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.style3 {
+	font-family: "Courier New", Courier, monospace
+}
+.style4 {
+	font-family: monospace
+}
+.style6 {
+	color: #990000;
+	font-style: italic;
+}
+.style7 {
+	color: #CC3300;
+	font-weight: bold;
+}
+.code1 {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 14px;
+	font-style: italic;
+}
+.red-highlight {
+	color: #CC3300;
+}
+</style>
+</head>
+<body class="oneColFixCtr">
+<div id="container">
+  <div id="mainContent"> <a name="top" id="top"></a>
+    <h2><b>Aspen Themeworks Plugin Documentation<br />
+      <br />
+      ATW Show Sliders
+      <br />
+      Version 1.0</b></h2>
+    <p>This document has information about the <strong>Aspen Themeworks Show Sliders</strong> plugin. This plugin allows you to display Image and Post Sliders and Carousels on your site.</p>
+<p> The <em>ATW Show Sliders</em> plugin <strong><em>requires</em></strong> that you also install both plugins the <em>Aspen Themeworks Show Posts</em> plugin, available from the WordPress.org plugin repository. <em>Show Sliders</em> uses the post selection filters and other features available in <em>Show Post</em>s to display post and image sliders.</p>
+<h4>Table of Contents</h4>
+    <ul style="line-height:1.7em;">
+      <li><a href="#summary"><strong>Plugin Summary</strong></a></li>
+<li><strong><a href="#admin_page">Aspen Posts and Slider Admin Page</a></strong></li>
+
+<li><a href="#slider"><strong>[show_slider] - Flexible, responsive slider</strong></a></li>
+<ul>
+<li><a href="#basic_slider_steps">Basic Steps to Create a Posts Slider</a></li>
+<li><a href="#which_image">Which Image is Used for the Slide?</a></li>
+<li><a href="#paging_images">Paging Images</a></li>
+<li><a href="#header_slide_show">Add Slide Show to Header</a></li>
+<li><a href="#slider_styling">Slider Styling</a></li>
+<li><a href="#video">Video in Sliders (Pro)</a></li>
+</ul>
+<li><a href="#gallery" title="[gallery] replacement"><strong>[gallery] - Make your [gallery]s display as a slider</strong></a></li>
+
+<li><a href="#add_to_sidebar" title="Add to content or sidbar"><strong>How To Add Shortcode to Your Content or a Sidebar</strong></a></li>
+    </ul>
+    <h2><a name="summary" id="summary"></a>Plugin Summary </h2>
+    <p>The <em>Aspen Themeworks Show Sliders</em> plugin allows you to create sliders and slide shows to display images and posts using a shortcode. You can use the retuired <em>ATW Show Posts</em> plugin's filter options to specify which posts or posts with images will be used by the slider. Can also specify an images show using the standard WordPress Media Library Create Gallery interface.</p>
+<p>The<em> Show Posts</em> plugin is a stand-alone plugin, and can be installed and used independently of the <em>Show Sliders</em> plugin. The <em>Show Sliders Plugin</em> <em><strong>requires</strong></em> the <em>Show Posts</em> plugin to work.</p>
+    <h2><a name="admin_page" id="admin_page"></a>Aspen Posts and Slider Admin Page</h2>
+<p>The administrative interfaces for these plugins will be added as a menu item on the Dashboard Menu. When you have both plugins installed , the menu is called <em>ATW Posts/Slider</em>, with an additional Dashboard menu called <em>Slider Posts</em> used to define custom pages for your sliders.</p>
+<h4>Using Shortcodes</h4>
+<p>Shortcodes are an important part of WordPress. They allow you to insert a shortcode - a named entity surrounded by [square brackets] anywhere into your pages and posts. The [show_posts] and [show_slider] shortcodes make it easy by adding buttons above the icon bar in the Page and Post editor.</p>
+<p>You can also insert the shortcodes anywhere else that a theme, plugin, or widget area supports shortcodes. Note that by default, the standard Text Widget does not support shortcodes. Some themes and plugins extend the Text Widget so it supports shortcodes. If your theme doesn't do that, you can check the option at the bottom of the<em> ATW Show Posts</em> admin tab to add shortcode support to the standard Text Widget.</p>
+<h2><a name="slider" id="slider"></a>[show_slider] - Flexible, responsive slider</h2>
+<p>The Aspen Themeworks [show_slider] shortcode is based on the <a href="http://flexslider.woothemes.com/" target="_blank">FlexSlider 2 jQuery</a> slider script, probably the best JavaScript available for showing content in sliders and slide shows. The Aspen Theme Works Show Slider plugin provides an interface that allows you to easily specify content and slider layout to take full advantage of FlexSlider.</p>
+<p>You can display standard WordPress posts in a slider, or images only in a slide show or carousel slider. You can specify a complete filter specification to choose Posts or Images. A custom post type, Slider Posts, is provided to allow you define custom slider content that won't appear on your site's blog or archive posts.</p>
+<p>The complete help document for the ATW Show Posts plugin can be found by clicking the document link from the &quot;Quick Start Help&quot; tab of the plugin admin page.</p>
+<h3><a name="basic_slider_steps" id="basic_slider_steps"></a>Basic Steps to Create a Posts Slider</h3>
+<ol>
+
+    <li><strong>Defining Content</strong><br />
+    You select content to be displayed in your banner by defining a <em>Filter</em> on the Filter tab. You can select almost any content to display depending on the complexity of your Filter. Filters are described below in the <em>Show Posts</em> section.<br />
+    <br />
+    One typical application is a Recent Posts slider that can be created by specifying &quot;Number of Posts&quot; to show.<br />
+    <br />
+    </li>
+    <li><strong>Define a slider</strong>
+    <br />
+    You can create as many sliders as you want. Follow these steps:<br />
+    <ol>
+      <li>Open the <em>Sliders</em> tab from the <em>ATW Posts/Slider</em> dashboard menu.</li>
+      <li>Create a new slider by entering a name in the box next to the &quot;Create New Slider&quot; button, and click that button.</li>
+      <li>Define options for the slider. There are some required options, clearly shown in the &quot;Required&quot; box. These include slider type (Single item at a time or a carousel), what kind of paging index you want, showing Posts or Images, and finally, a Filter.<br />
+        <br />
+      </li>
+    </ol>
+  </li>
+    <li><strong>Display your slider with the shortcode</strong>
+      <br />
+      Simply enter the shortcode: <code>[show_slider name=name-of-you-slider]</code> wherever you want the slider to be displayed.<br />
+      <br />
+Getting the slider to display as a banner in your header is more complicated. See the instructions below.</li>
+ </ol>
+<h3>Create an Image Slide Show using WordPress Media Gallery</h3>
+<ol>
+  <li>Create the Image Slider content. Open <em>Dashboard : Slider Posts : New Slider Post</em> to create a Slider Post to define gallery. Give that post a meaningful name - for example, <em>Colorado</em>. </li>
+  <li>Create [gallery]  for that post using &quot;Add Media : Create Gallery&quot;. See this video <a href="http://www.youtube.com/watch?v=8O0swHbEdVU#t=515" title="Create Gallery Tutorial" target="_blank">tutorial</a> on how to create a gallery. Publish that Slider Post.</li>
+  <li>Open the<em> Dashboard : ATW Posts/Slider : Sliders</em> tab. Create a New Slider (e.g., named &quot;Colorado&quot;). In the &quot;Required Options&quot; section, set slider type and paging options  to your choice.  In the <span style="color:green;">&quot;Quick Option:</span> Slider Post Slug" box right under the&quot;Slider Filter:&quot; setting, enter the slug (e.g., &quot;colorado&quot;) of the Slider Post you created in step 1. Save settings.</li>
+  <li>Add shortcode [show_slider name="colorado"] wherever you want the slider (there is an insert button on the Page/Post Editor).</li>
+  <li>View your slide show.</li>
+</ol>
+<h3>Create an Image or Post Slide Show using a Filter</h3>
+<ol>
+  <li>Create the content for your slider. Content can be regular posts, or special content created just for the slider using the &quot;Slider Posts&quot; custom post type. Content with images can be used for Image Sliders.<br />
+    <br />
+  </li>
+  <li>Select your Slider content by creating a Filter on <em>Filters</em> tab (for example, a filter named &quot;Colorado&quot;). For a &quot;Post&quot; slider, the posts can contain any content. For an &quot;Image&quot; slider, the posts you select in the filter should contain either a [gallery] shortcode, or an image. Image Sliders will use either the [gallery], the post's &quot;Featured Image&quot;, or the first image contained in the post. All posts selected by the filter will be included in the slider.<br />
+    <br />
+  </li>
+  <li>Create a Slider on <em>Sliders</em> tab. (for example, named &quot;Colorado&quot;). Set &quot;Slider Type&quot;,  &quot;Slider Paging&quot;, and &quot;Slider Content&quot; to your choice. Set Slider Filter to &quot;Colorado&quot;. Save settings.<br />
+    <br />
+  </li>
+  <li>Add shortcode [show_slider name=&quot;colorado&quot;] (there is an insert button on the Page/Post Editor).<br />
+    <br />
+  </li>
+  <li>See your slide show.</li>
+</ol>
+<h4><strong>Hints For Image Sliders</strong></h4>
+<ol>
+  <li>The easiest way to define Image Slider content is to use the [gallery] shortcode generated by the &quot;Add Media : Create Gallery&quot; menu available in the Post Editor. That tool allows you to edit each image's title, caption, description. You can  click the Edit Gallery button on the large Gallery Icon displayed in the Visual edit mode display of the post. From there, you can  edit each image's title, caption, description; you can also delete, add, and change the order of images in the slider. You can even preview which slides are included by clicking the View Post option from the Post Editor.<br />
+    <br />
+  </li>
+  <li>The easiest way to define a single slider is to define a [gallery] in a Slider Posts custom post, and use the slug name of that post in the Slider Tab &quot;Quick Option: Slider Post Slug&quot; box.<br />
+    <br />
+  </li>
+  <li>You can create individual custom Slider Posts that contain individual images (or even a [gallery] definition), and group them all together into a single slide show by adding them all to the same &quot;Slider Group&quot; as defined on the Slider Posts editor page. They you can specify a &quot;Slider Group&quot; in the <em>Filters</em> tab. Note that these slides will be displayed using the sort order displayed in the ordering options found in the &quot;Basic Options&quot; box.</li>
+</ol>
+<h4><strong>Hints for both Posts and Images Sliders</strong></h4>
+<ol>
+  <li>You can create  new custom posts using the Slider Posts menu. This is a new custom post type that works just like a regular post - but intended to define slides or specialized posts. These custom posts will not appear in the same places that standard WordPress posts do - e.g., blog pages or archive pages (category, tag, dates, etc.). Slider Posts are not limited to just image sliders - you can use them however you want.<br />
+    <br />
+  </li>
+  <li>You might find it helpful to maintain your sliders and filters if you give the same name to a slider and its corresponding filter.<br />
+    <br />
+  </li>
+  <li>All posts selected by a filter definition will be displayed in the order set by the ordering options in the &quot;Filter : Basic Options&quot; box. The default is by descending date order. This is the same as the standard blog order.<br />
+    <br />
+  </li>
+  <li>You can have posts displayed in a specific order by defining a set of specific posts to display by post ID using the &quot;Filter : By Post IDs&quot; box.  You can find a post's ID in your browser's URL address field when editing the post with the Post editor. It is the number right after the <em>?post=</em>. Sorry this can't be easier, but the only way WordPress supports showing a specific set of posts is by ID. Note that images defined in a [gallery] shortcode will be displayed in the order they are specified.</li>
+  </ol>
+<h3><a name="which_image" id="which_image"></a>Which Image is Used for the Slide?</h3>
+<p>When you define an Image Slider, Show Sliders will select which image to display using the following rules. If displaying the caption and/or the description is enabled, those values will come from the Media Library values for a given image.</p>
+<ol>
+  <li><strong>[gallery] Images</strong> - If the first image the post has a [gallery], Show Posts will display all the images from the [gallery], one image per slide, and displayed in the order specified in the gallery. There is a Pro option to disable using [gallery]s as the source for images. The title  will be taken from each images Media Library values, and the image link will open the image's attachment page. The Media Library thumbnail is used for Thumbnail Pagers.<br />
+    <br />
+  </li>
+  <li><strong>Post Featured Image</strong> - If no [gallery] is detected, then the Featured Image specified for a post will be used for the slide image by default. There is an option to disable using the Featured Image for the main image. The title will come from the post's title instead of the image's Media Library title, and the link will open the post. The Media Library thumbnail for the Featured Image is used for Thumbnail Pagers.<br />
+    <br />
+  </li>
+  <li><strong>First Image in Post</strong> - If there is no Featured Image (or FI's have been disabled), the first image in a post will be used as the slide image. The title and link are from the post. The Media Library thumbnail will be used for Thumbnail Pagers unless the image is not the Media Library, in which case the image itself will be used for the thumbnail.<br />
+    <br />
+    <strong>Alternate Link</strong>: If a slide image is defined with this method, the Pro version of the plugin has an option in the <em>Other Options: Navigation</em> section that allows you to specify an arbitrary link for the slide: &quot;For Image Slide from a post, use link as specified in &quot;Add Media&quot; link for image rather than link to post.&quot; When you use the &quot;Add Media&quot; button from the post editor to insert an image, you have an option to specify a link associated with that image. This link is then inserted into the post. That link is not associated with that image anywhere else. If you define that link and check this option and enable the &quot;Add links to images&quot; options, then this link will be used from the slide in the slider. This could be to an external site, a specific page - whatever you want.<br />
+    <br />
+  </li>
+  <li><strong>Post Content</strong> - If there is no image detected in the post, then the post will be displayed &quot;as-is&quot;. This final fallback is how Videos are displayed. If there are no Video or other media links in the post, the text content of the post will show in the image slide. By default, a generic &quot;content&quot; image will be displayed in Thumbnail pagers. There is an option that will allow Videos to have custom thumbnails.<br />
+    <br />
+  </li>
+  <li><strong>Use Featured Image only for Thumbnails</strong> - If a Featured Image is defined for a post, it will <em>always</em> be used as the thumbnail image for a Thumbnail Pager. For the Pro version, there is an option that forces the Featured Image to be used only as a Thumbnail Pager image and not as the image for the slide. This option is necessary to allow the use of the Featured Image as a thumbnail for Video sides.<br />
+  </li>
+</ol>
+<h3><a name="paging_images" id="paging_images"></a>Paging Images</h3>
+<p><em>ATW Show Sliders</em> supports four different kinds of paging for your single item slider - No paging, Paging dots, Thumbnails, and Sliding Thumbnails. The image used for thumbnails is automatically generated from the content that generates each slide.</p>
+<p>Thumbnails is laid out as a grid below the main slider image. Sliding Thumbnails are displayed in a Carousel pager right below the main image.</p>
+<p>Note: there currently is a glitch in the &quot;FlexSlider&quot; Javascript used by ATW Show Sliders with the Sliding Thumbnails implementation. When you &quot;wrap around&quot; from the last slide in the show, the pager slider does not update properly until the third slide is again displayed. This is a somewhat complex problem, and unfortunately we must wait for the FlexSlider author to fix this problem.</p>
+<p> Carousels can be used only with no paging or paging dots, in which case, each dot represents a &quot;page&quot; of images - however many images are displayed at once in the carousel.</p>
+<p>For images that originate from a [gallery], the pager thumbnail will be the Media Library thumbnail image associated with the main image. For an image slider with images contained in a Post, the Featured Image will be used as the pager image - if it is defined. Otherwise, the first image in the post is used. If no image is included, a default image is used for the pager.</p>
+<p>For &quot;Show Slider as Posts&quot;, the only option is to define a Featured Image for each post included in the post slider. If there is no Featured Image defined for a post, then a default image is used. The &quot;Thumbnails&quot; grid pager is <strong>not</strong> supported for Posts Sliders.</p>
+<p>Videos also require a Featured Image to define a pager image, but also requires that the  &quot;Use Featured Image only for Thumbnails&quot; option be checked. See the &quot;Video&quot; section below for more details.</p>
+<h3><a name="header_slide_show" id="header_slide_show"></a>Add Slide Show to Header</h3>
+<p>You might want to add a banner slider to your site's header area. If your theme allows you to insert shortcodes into the header area (such as <em>Weaver II</em> or <em>Aspen</em>), you should use that option. Otherwise,  you may have to add a PHP snippet to a file in your theme.</p>
+<p>If you can't add a shortcode to your header area, you will have to modify a file in your theme called &quot;header.php&quot;. This file contains the PHP code that defines the header of your site. While most anyone with a bit of experience can do this, you need to be comfortable playing with theme PHP files. But you should never edit a theme's files directly. Instead, you should always work with a child theme. </p>
+<p>So first, we will describe how to do that with a plugin called &quot;Orbisus Child Theme Creator&quot;. This plugin makes it easy to create a child of your parent theme (but you can't create a child of a child!). Note that this plugin presents a bit of an intrusive interface, adding excess messages to the plugins page, so you will want to deactivate it when you're done creating the child theme. Here's the steps:</p>
+<ol>
+  <li>Install and activate <a href="http://wordpress.org/plugins/orbisius-child-theme-creator/" target="_new">Orbisus Child Theme Creator</a> from the Plugins admin page.</li>
+  <li>Under the dashboard Appearance menu, open the Orbisius Child Theme Creator tab.</li>
+  <li>Find your theme in the list. Check the &quot;Customize title, description, etc.&quot; box, and fill in appropriate values. These are for your own use, so you don't need to be too fussy.</li>
+  <li>Click &quot;Create Child Theme&quot;. This will create a child theme in the /wp-content/themes directory of your site. It will automatically create a new style.css files, plus copy some files from your parent theme, including 'header.php', which is the file you need to modify to add a slideshow to your header.</li>
+  <li>You can activate the new child theme, and you should see no changes to your site at this point.</li>
+  <li>You will now want to edit the child's copy of header.php as described below. To do this, now open the &quot;Orbisius Theme Editor&quot; on the Appearance menu. This will open up an edit page that says &quot;Pick any two themes and copy snippets from on the the other&quot;. You only will need to open one theme - the new child you just created. So in the &quot;Theme #1&quot; area, select your new<em> child theme</em> (not the original parent!). In the &quot;File&quot; selector, pick &quot;header.php&quot;.</li>
+  <li>Add the code snippet as described below. Save changes. Your slider should now appear on your site.</li>
+  <li>Deactivate the Orbisus Child Theme Creator. </li>
+</ol>
+<p><strong>Adding the slider code snippet to header.php</strong></p>
+<p>The goal is to add this PHP code:</p>
+<p><code>&lt;?php if (function_exists('atw_slider_sc')) atw_slider_sc(array('name'=&gt;'put-your-slider-name-here')); ?&gt;</code></p>
+<p>to an appropriate place in the child theme's header.php file. Depending on where the snippets is inserted, you may or may not need the <span class="css">&lt;?php</span> and <span class="css">?&gt;</span> wrapper. </p>
+<p>You will likely want the slider to go just above or below the existing header image, so a good approach is to look for the code that adds the header image (but not all themes include the standard header image in the header, but they will have code that defines something that shows at the top of your site like the title, for example.) The header.php file will typically include a <span class="css">&lt;!DOCTYPE html&gt;</span> statement, stuff for the <span class="css">&lt;head&gt; ... &lt;/head&gt;</span> section, and the starting <span class="css">&lt;body&gt;</span> HTML tag. The content of the site &quot;header&quot; should be right after the <span class="css">&lt;body&gt;</span> tag.</p>
+<p>The header image is usually included using the function calls to <span class="css">header_image()</span> and <span class="css">get_header_image()</span>. Hopefully, the code will also include comments that can help you figure out where to put the snippet for the slider. Add the above &quot;<span class="css">atw_slider_sc</span>&quot; snippet to the point where you want the slider to appear.</p>
+<p>You may want to delete the code that shows the standard header if your slider is acting as a replacement. For those a bit more comfortable with coding, you may be able to take advantage of some WordPress API functions for more control of the slider. For example, it is possible to use the function <span class="css">is_front_page() </span>to show the slider on just the front page:</p>
+<p><code>&lt;?php if (is_front_page() &amp;&amp; function_exists('atw_slider_sc'))<br />
+ &nbsp;&nbsp;&nbsp;&nbsp;atw_slider_sc(array('name'=&gt;'put-your-slider-name-here')); ?&gt;</code></p>
+<p>We hope this little tutorial will help you add a banner type slider to your theme's header. Unfortunately, because there are so many themes with so many different variants in the header.php,  we really can't provide any more help with this technique. You could also consider using the Aspen or Weaver II themes which make adding a shortcode to your header trivial.</p>
+<h3><a name="slider_styling" id="slider_styling"></a>Slider Styling</h3>
+<p>The CSS Styling ATW Show Sliders uses has been extensively tested with many WordPress Themes, and looks great with almost all themes. However, if the display isn't perfect with your theme, or you would like to customize the look of the sliders, and you know a bit of CSS, you can use the Custom CSS tab to add some custom CSS rules to tweak the slider styling. These are some of the classes used to style the slider:</p>
+<ul>
+  <li><strong>.atwkslider .atwk-caption</strong> - caption over slider images</li>
+  <li><strong>.atwkslider .atwk-title</strong> - title over slider images</li>
+  <li><strong>.atwkslider .atwk-caption-overlay</strong> - caption overlays image (Pro option)</li>
+  <li><strong>.atwkslider .atwk-title-overlay</strong> - title overlays image (Pro Option)</li>
+  <li>.<strong>atwkslider .atwk-description </strong>- description beneath slider images</li>
+  <li><strong>.atw-slider</strong> - wraps whole slider</li>
+  <li><strong>.atwk-control-nav { bottom: -35px; }</strong> - tweak value for dot pager location: 35px will move dots inside image</li>
+  <li><strong>.atwkslider { margin-bottom: 30px; }</strong> - tweak slider bottom margin</li>
+  <li><strong>.atwkslider .atwk-control-paging li a.atwk-active, .atwkslider .atwk-control-paging li a:hover, atwkslider .atwk-control-paging li a</strong> - use to tweak background colors for dot pager</li>
+  <li><strong>.atwk-control-thumbs li img {border:2px solid white !important;}</strong> - tweak to add a border around slider index thumbnails</li>
+
+  <li><strong>.atwk-content-thumbs { margin-top:-35px; }</strong> - tweak the space between slider and slider thumbnail pager</li>
+  <li><strong>.atwk-content-thumbs-above { margin-bottom:5px; }</strong> - tweak the space between slider and slider thumbnail pager when above</li>
+
+  <li><strong>.atwkslider .atwk-control-nav.atwk-control-thumbs li {margin: 0px 0 0px 0 !important;}</strong> - change px values add some space above and below thumbnail pager</li>
+  <li><strong>.atwkslider-slider-name-slug - </strong>define a per slider rule. In the above rules starting with .atwkslider, replace the .atwkslider with .atwkslider-slider-name-slug (where slider-name-slug is the slug of the slider definition). For the other rules, add <span class="css">.atwkslider-slider-name-slug</span> in front of the rule.</li>
+  </ul>
+<p>You will likely have to add <em class="css">!important</em> to any new rules you add to the CustomCSS tab. The default style rules for all sliders is found in the file <em>/wp-content/plugins/show-sliders/flex/css/atwflexslider.css</em>. The rules have been extensively commented, so you can use them as a guide for developing your own new rules. Note - do <strong>NOT</strong> edit that file directly as it will be replaced whenever the plugin is updated. In addition, that file is not used directly by the plugin (the <span class="css">.min</span> minimized file is actually used).</p>
+<h3><a name="SliderHInts" id="SliderHInts"></a>Slider Hints</h3>
+<p>This section has some hints for using sliders.</p>
+<ul>
+  <li><strong>Image Captions and Titles with Dark Themes</strong><br />
+    If your theme has a dark background, it can be difficult to read the image title and caption. You can change the background color of the slider in the Slider Options:Basic Options section, or add the following rules to the Custom CSS box:<br />
+    <br />
+    <span class="css">.atwkslider .atwk-caption {color:white !important;}<br />
+.atwkslider .atwk-title {color:white !important;text-shadow:none !important;}</span><br />
+<br />
+  </li>
+  <li><strong>Slider in a Sidebar</strong><br />
+    You can add the [show_slider] shortcode to a standard text widget. You may need to enable the shortcodes for the text widget at the bottom of the <em>Show Posts</em> tab.<br />
+    <br />
+  </li>
+  <li><strong>Size of a Slider</strong><br />
+    By default, a slider will take 100% of the width of its wrapping container. It will normally responsively re-size as the browser is shrunk. If you need to make the slider smaller, you can wrap it in a &lt;div&gt; with appropriate styling.<br />
+  </li>
+</ul>
+<h3><a name="video" id="video"></a>Video in Sliders (Pro)</h3>
+<p>While you can include Videos in your sliders with the free version of <em>ATW Show Sliders</em>, the Pro version offers extra support for videos. Most significantly, with the Pro version, videos will automatically re-size to optimally fit the slider, and there will be reduced conflicts with some browsers.</p>
+<p>The process of adding strictly video sliders essentially requires using the Slider Post custom post type. For each video you want in slider, create a Slider Post, and add <em>only</em> the code for the slider. You can use whatever method you want to display the video in the slider - from using WordPress's default built-in video recognition (just giving the link to the video), to using more advanced video shortcodes.</p>
+<p>Note that since it is not possible to automatically generate a pager thumbnail for videos, if you want to use a Thumbnail pager, you will need to specify a Featured Image as the thumbnail image, plus you must also click the option &quot;Use Featured Image only for Thumbnails&quot; in the &quot;Thumbnail Pagers&quot; option section.</p>
+<hr />
+<h2><a name="gallery" id="gallery"></a><strong>[gallery] Shortcode</strong></h2>
+<p>As a bonus feature, ATW Show Sliders can also serve as an alternate way to display your [gallery] shortcodes as a slider. Using this feature requires 2 steps:</p>
+<ol>
+  <li>First, you have to decide what kind of slider you want to use to display your [gallery] shortcodes. To do this, you need to define a Slider option set on the <em>Sliders</em> tab. While you can use any slider definition you want for your [gallery]s, all [gallery]s will be displayed using the same slider definition.</li>
+  <li>Enable [gallery] replacement and select which Slider definition you want - this is on the [gallery] tab.</li>
+  </ol>
+<h3>Hints for managing your galleries</h3>
+<p>The standard WordPress gallery tool is quite powerful, and quite easy to use. When used in the typical manner, you use the following general steps:</p>
+<ol>
+  <li>Click the Add Media button from the Page/Post editor</li>
+  <li>Click the Create Gallery menu item on the Gallery popup admin box.</li>
+  <li>Define your gallery - you can select which images you want to include. You can add new images. You can quickly edit the Title, Caption, Alt Text, and Description of each image.</li>
+  <li>Finally, click the &quot;Create a new gallery&quot; button, and a [gallery] shortcode will be inserted into your page or post.</li>
+  </ol>
+<p>Note that if you are in Visual mode, you will see a large outline icon that represents the gallery. If you click on the gallery icon, you'll see buttons to either Edit or Delete the gallery. If you are in Text mode, you'll see the [gallery] shortcode that usually include a list of the images in the gallery. Note that if you edit the gallery by clicking the edit button in the gallery icon, you have the opportunity to add new images, delete images, drag and drop images to change the sort order, as well as specifying other options.</p>
+<p>When used in this fashion, your galleries are associated with individual pages, which may work just fine. But if you would like to maintain different galleries, and perhaps reuse them, or move them from page to page, the Slider Posts custom post type can help you do this. Slider Posts posts are not normally displayed in the standard parts of your site. These custom posts were intended mainly as a means for defining a ATW Show Sliders image slide show. But you can also use them just to save a gallery definition. Use all the built-in WordPress tools for creating and editing a gallery on a Slider Posts post. Then, when you want to use that gallery on any other page or post, simply copy/paste the gallery from the Slider Post to where you want it to be displayed.</p>
+
+
+<h3><a name="add_to_sidebar" id="add_to_sidebar"></a>How To Add Shortcode to Your Content or a Sidebar</h3>
+<p>Both <em>ATW Show Posts</em> and <em>ATW Show Sliders</em> work through the standard WordPress Shortcode feature. To add a Show Post to your content, insert <strong>[show_posts filter=filter-name]</strong> into a page or post. To insert a slide show, add <strong>[show_slider name=slider-name]</strong>. To make this easier, there are<em> Add [show_posts]</em> and <em>Add [show_slider]</em> buttons above the Page/Post editor icon bar.</p>
+<p>You can also add these shortcodes to a sidebar using a standard Text Widget. Simply add the shortcode (you can copy the current settings for the shortcode from the version displayed near the top of either the &quot;Show Posts&quot; tab or the &quot;Sliders&quot; tab, then paste them into a Text Widget. Many themes an plugins already add the ability to include shortcodes in the Text Widget, but if you just see the shortcode displayed in the Text Widget when you view your site, open the &quot;Show Posts&quot; tab, and click the option at the bottom to allow the Text Widget to include shortcodes.</p>
+<p>&nbsp;</p>
+<p>The Aspen Aspen Themeworks Slider Plugin and this document are &copy; 2014, Bruce E. Wampler. <a ref="http://aspenthemeworks.com">Web Site - AspenTheme.com</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+  </div>
+</div>
+</body>
+</html>

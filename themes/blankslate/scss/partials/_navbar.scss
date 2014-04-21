@@ -1,0 +1,51 @@
+nav{
+	@include pie-clearfix;
+	width: 100%;
+	height: 3.750em;
+	postion: fixed;
+	top: 0;
+	background-color: #555;
+	.menu-main-menu-container{
+		margin: 0 auto;
+		height: 3.750rem;
+		float: left;
+		#menu-main-menu{
+			@include pie-clearfix;
+			list-style: none;
+			margin: 0; 
+			padding: 0;
+			li{
+				float: left;
+				padding: 0 1em;
+				a{
+					font-family: 'AlternateGotNo3D';
+					color: #F2F2F2;
+					text-decoration: none;
+					font-size: 1.5em;
+					text-transform: uppercase;
+					line-height: 3.750rem
+				}
+			}
+		}
+	}
+	#search{
+		float: right;
+		width: auto;
+		display: inline-block;
+		position: relative;
+		.fa-search{
+			position: absolute;
+			z-index: 2;
+			left: 10px;
+			font-size: 1.25em;
+			line-height: 3.750rem;
+			color: #CCC;
+		}
+		#s{
+			@include border-radius(20px);
+			height: 30px;
+			margin: 15px 0;
+			width: 200px;
+		}
+	}
+}

@@ -1,0 +1,411 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Aspen Themeworks Slider</title>
+<style type="text/css">
+body {
+	background: #eeeeee;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 10px; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	background-color: #ffd;
+}
+
+/* everything about each major block on the site - may be mods in some places */
+
+#container {
+	max-width:800px;
+	background-color: #00CC00;
+}
+#mainContent {
+	background-color: #ffc;
+}
+.oneColFixCtr #container {
+	max-width: 750px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFCD;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+.oneColFixCtr #mainContent {
+	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	font-size:12px;
+}
+/* layouts for layout boxes */
+.layoutbox {
+	width:700px;
+	text-align:center;
+	margin:0 25px;
+}
+.l_layout {
+	display:block;
+	width:140px;
+	height:110px;
+	float:left;
+	margin-right:10px;
+	margin-bottom:10px;
+	display:inline;
+	border:1px solid #888;
+	color:black;
+	text-align:center;
+	font:15px arial, sans-serif;
+}
+.l_layout span {
+	display:block;
+}
+.l_header {
+	width:140px;
+	height:20px;
+	background:#CCF;
+	line-height:20px;
+}
+.l_content {
+	width:100px;
+	height:70px;
+	background:beige;
+	float:left;
+	display:inline;
+	line-height:70px;
+}
+.l_contentcenter {
+	width:60px;
+	height:70px;
+	background:beige;
+	float:left;
+	display:inline;
+	line-height:70px;
+}
+.l_content2 {
+	width:80px;
+	height:70px;
+	background:beige;
+	float:left;
+	display:inline;
+	line-height:70px;
+}
+.l_contentw {
+	width:140px;
+	height:70px;
+	background:beige;
+	float:left;
+	display:inline;
+	line-height:70px;
+}
+.l_stdbar {
+	width:40px;
+	height:70px;
+	float:left;
+	display:inline;
+}
+.l_widebar {
+	width:60px;
+	height:70px;
+	float:left;
+	display:inline;
+}
+.l_righttop {
+	width:40px;
+	height:20px;
+	background:#FE8;
+	float:left;
+	display:inline;
+	line-height:20px;
+}
+.l_righttopwide {
+	width:60px;
+	height:20px;
+	background:#FE8;
+	float:left;
+	display:inline;
+	line-height:20px;
+}
+.l_rightup {
+	width:40px;
+	height:25px;
+	margin:0;
+	background:#FAA;
+	float:left;
+	display:inline;
+	line-height:25px;
+}
+.l_rightright {
+	width:40px;
+	height:50px;
+	margin:0;
+	background:#FAA;
+	float:left;
+	display:inline;
+	line-height:50px;
+}
+.l_rightdown {
+	width:40px;
+	height:25px;
+	margin:0;
+	background:#AFA;
+	float:left;
+	display:inline;
+	line-height:25px;
+}
+.l_leftleft {
+	width:40px;
+	height:70px;
+	margin:0;
+	background:#AFA;
+	float:left;
+	display:inline;
+	line-height:70px;
+}
+.l_leftshort {
+	width:30px;
+	height:50px;
+	margin:0;
+	background:#AFA;
+	float:left;
+	display:inline;
+	line-height:50px;
+}
+.l_skinny {
+	width:30px;
+	height:50px;
+	margin:0;
+	background:#FAA;
+	float:left;
+	display:inline;
+	line-height:50px;
+}
+.l_footer {
+	clear:left;
+	width:140px;
+	height:20px;
+	background:#DDF;
+	color:#000;
+	line-height:20px;
+}
+h4 {
+	font-weight: bold;
+	font-style:italic;
+	color: #000066;
+	text-decoration: underline;
+}
+h3 {
+	font-size: medium;
+	font-weight: bold;
+	color: #000066;
+	text-decoration: underline;
+}
+h2 {
+	font-size: large;
+	font-weight: bold;
+	color: #000066;
+	text-decoration: underline;
+	margin-top: 40pt;
+}
+h1 {
+	font-size: x-large;
+	font-weight: bold;
+	color: #000066;
+	text-decoration: underline;
+}
+.codebox {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 10px;
+	font-style: normal;
+	background-color: #E8E8E8;
+	margin: 10px;
+	padding: 4px;
+	border: 1px solid #333333;
+	color: #000000;
+	width: 80%;
+}
+.attrs {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color:#000000;
+	text-decoration: none;
+}
+.css {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 9pt;
+	font-style: normal;
+}
+.box {
+	color: #000000;
+	text-decoration: none;
+	margin: 5px;
+	padding: 5px;
+	border: thin solid #000000;
+}
+.nospace {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.style3 {
+	font-family: "Courier New", Courier, monospace
+}
+.style4 {
+	font-family: monospace
+}
+.style6 {
+	color: #990000;
+	font-style: italic;
+}
+.style7 {
+	color: #CC3300;
+	font-weight: bold;
+}
+.code1 {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 14px;
+	font-style: italic;
+}
+.red-highlight {
+	color: #CC3300;
+}
+</style>
+</head>
+<body class="oneColFixCtr">
+<div id="container">
+  <div id="mainContent"> <a name="top" id="top"></a>
+    <h2><b>Aspen Themeworks Plugin Documentation<br />
+      ATW-Show Posts<br />
+      Version 1.0</b></h2>
+    <p>This document has information about  <strong>Aspen Themeworks  Show Posts</strong>. This plugin allows you to show selected posts anywhere on your site that you can use a shortcode.</p>
+<h4>Table of Contents</h4>
+    <ul style="line-height:1.7em;">
+      <li><a href="#summary"><strong>Plugin Summary</strong></a></li>
+<li><strong><a href="#admin_page">Aspen Posts and Slider Admin Page</a></strong></li>
+
+  <li><strong><a href="#showposts">[show_posts] Shortcode</a></strong></li>
+
+<li><a href="#add_to_sidebar" title="Add to content or sidbar"><strong>How To Add Shortcodes to Your Content or a Sidebar</strong></a></li>
+    </ul>
+    <h2><a name="summary" id="summary"></a>Plugin Summary </h2>
+    <p>The <em>Aspen Themeworks Show Posts</em> plugin allows you to show posts and posts with a custom post type anywhere your theme supports shortcodes. You can specify which posts will be displayed using an interactive filter design page.</p>
+    <p><em>ATW Show Posts</em> has a companion plugin. The <em>Aspen Themeworks Show Sliders</em> plugin allows you to create sliders and slide shows to display images and posts using a shortcode. You can use the Show Posts filter options to specify which posts or posts with images will be used by the slider. Can also specify an images show using the standard WordPress Media Library Create Gallery interface.</p>
+    <p>The <em>Show Posts</em> plugin is a stand-alone plugin, and can be installed and used independently of the <em>Show Sliders</em> plugin. The <em>Show Sliders</em> Plugin <em>requires</em> the <em>Show Posts</em> plugin to work.</p>
+    <h2><a name="admin_page" id="admin_page"></a>Aspen Posts and Slider Admin Page</h2>
+<p>The administrative interfaces for <em>ATW Show Posts</em> and its companion, <em>ATW Show Sliders</em> will be added as a menu item on the Dashboard Menu. If you have just the Show Posts plugin installed, then the menu will be called <em>ATW Show Posts</em> with an Aspen icon to the left. If you have both plugins, the menu is called <em>ATW Posts/Slider</em>, with an additional Dashboard menu called <em>Slider Posts</em> used to define custom pages for your sliders.</p>
+<h4>Using Shortcodes</h4>
+<p>Shortcodes are an important part of WordPress. They allow you to insert a shortcode - a named entity surrounded by [square brackets] anywhere into your pages and posts. The [show_posts] shortcodes makes it easy by adding an &quot;Add [show_posts]&quot; button above the icon bar in the Page and Post editor.</p>
+<p>You can also insert the shortcode anywhere else that a theme, plugin, or widget area supports shortcodes. Note that by default, the standard Text Widget does not support shortcodes. Some themes and plugins extend the Text Widget so it supports shortcodes. If your theme doesn't do that, you can check the option at the bottom of the<em> ATW Show Posts</em> admin tab to add shortcode support to the standard Text Widget.</p>
+<h2><a name="showposts" id="showposts"></a><strong>[show_posts] Shortcode</strong></h2>
+<p> The [show_posts] shortcode is a very powerful tool for displaying posts from within your pages or from a text widget. Among other possibilities, it can be used to get a magazine style layout on your pages. This shortcode is intended to display a relatively small number of selected posts. </p>
+<p>Which posts are displayed are controlled by the filtering options set on the <em>Filters</em> tab, or provided as parameters of the shortcode. Below is a summary of all parameters, shown with default values. You don't need to supply every
+  option when you add the [show_posts] to your own content. There may seem to be an overwhelming set of options for this shortcode, but it gives you many options for displaying specific posts within a static page. </p>
+<h3>Defining a Filter</h3>
+<p>When WordPress displays posts, whether that be on the standard blog page; an archive type page such as categories, tags, dates, or the like; or the posts displayed by<strong> [show_posts]</strong>, it uses a set of filter specifications to select which posts to display in a specific order. For example, the standard blog page will show all posts displayed in descending date order, with sticky posts shown first. A category archive (like categories displayed from the standard WordPress Categories Widget) will show only posts from a specific category.</p>
+<p>The Aspen Themeworks <strong>[show_posts</strong>] shortcode will display whatever posts you want to specify. WordPress supports all sorts of options for selecting posts, and the Show Posts <em>Filter</em> tab makes it easy specify just which posts you want displayed.</p>
+<p>You can define as many different filters that you need. You create and name each Filter in the <em>Filters</em> &quot;Select Filter&quot; box. The rest of the <em>Filters</em> tab lets you set different display and post selection options.</p>
+<h3>Filter Display Options - Theme Interaction</h3>
+<p>By default,<em> ATW Show Posts</em> will normally use its own simple layout of posts. There is typically some interaction with the native theme styling - titles, content fonts, images, etc - but the default will usually not look too bad. If used with the Aspen or Weaver II themes (themes developed by the author of this plugin), posts will be displayed using Aspen or Weaver II display functions by default. ATW Show Posts can also use the native post display functions of many other themes.</p>
+<p>There are several options to control how each post is displayed. The normal elements of any post includes the post title; post meta information such as date, author, categories, tags, and featured image; and the main post content displayed as the full post or an excerpt. There are options to display or hide each of these elements. The display/hide option work for the built-in post display functions and the Aspen/Weaver II native post displays, but <em>not</em> the native post display functions supported by some themes.</p>
+<p>To summarize, the [show_posts] can display each post using one of three methods: its own built-in post display function, the native post display function used by the Weaver II and Aspen Themes, or the native post display function used by many (but not all) WordPress themes. In the latter two cases, post will be displayed so that they match other posts displayed by your theme. You can select which of these methods is used to display posts.</p>
+<p> The option to use your theme's native display will not be included unless the theme has a file called <span class="css">content.php.</span> For themes that have this function (over 50% do), most will display posts from [show_posts] nearly the same as they display standard blog posts. However, some themes will have glitches and not give satisfactory display. You should experiment with that setting to see if you get the results you want.</p>
+<p>In any event, you can use the plugin's built-in post display function, and usually get very satisfactory results. The plugin contains a tab called <em>Custom CSS</em> that can be used to provide custom CSS styling to help the built-in post display better match your theme's native post display. These are the classes used by the built-in post display:</p>
+<ul>
+  <li><strong>.atw-show-posts</strong> - wraps each post</li>
+  <li><strong>.atw-entry-title a</strong> - the title (h2 a)</li>
+  <li><strong>.atw-entry-meta</strong> - top meta info line</li>
+  <li><strong>.atw-entry-header</strong> - wraps title + meta</li>
+  <li><strong>.atw-featured-image</strong> - wraps the FI</li>
+  <li><strong>.atw-entry-content</strong> - wraps full content</li>
+  <li><strong>.atw-entry-summary</strong> - wraps excerpt</li>
+  <li><strong>.atw-entry-utility</strong> - wraps bottom meta info line</li>
+  <li><strong>.atw-show-posts .sticky</strong> - sticky posts</li>
+  </ul>
+<p>Note that the Custom CSS option can be used to provide your own custom CSS Styling for any part of your site - without the need to edit your theme's <span class="css">style.css </span>file (-you should NEVER do that anyway). However, providing information on creating CSS rules is beyond the scope of this documentation. While CSS may seem beyond the level of non-technical WordPress users, there are plenty of tutorials available on the web, and you can add lots of fine tuning to almost any theme with a bit of custom CSS.</p>
+<h3>Filter Selection Options</h3>
+<p>The Filters options provided by the plugin are generally descriptive of what they do. From a technical standpoint, they exactly match the options supported by <a href="http://codex.wordpress.org/Class_Reference/WP_Query" alt="WP_Query Codex Entry" target="_blank">WP_Query</a>, the PHP function used by WordPress to determine which posts to display.</p>
+<p>Technical note: There are a few of the options (Post Type, Categories, ByPost IDs) that are often needed by [show_posts], but don't have an exact equivalent in WP_Query, but are manipulated by the plugin to the appropriate values needed internally. But note that there is one option, &quot;Custom WP_Query Args&quot;, that allows you to specify many of the possible WP_Query args not included in the <em>Filters</em> tab. For security and technical reasons, any args requiring an &quot;array(...)&quot; value is not supported by this option.</p>
+<p>You can't mess up your WordPress database or any other content by experimenting will all these options. So feel free to play with all the options to see just how flexible the <em>Filters</em> tab is for selecting posts to display.</p>
+<h3>Summary</h3>
+<p> The Aspen Themeworks <code>[show_posts]</code> shortcode allows you to display posts on your pages or in a text widget
+  in the sidebar. You can specify a large number of filtering options to select a specific set of posts to show. </p>
+<p> The recommended way to display posts is to specify all the filter selection options on the <em>Filter</em> tab, and use the <strong>[show_posts filter=filter-name]</strong> form of the shortcode. You can also specify the options manually. </p>
+<p>&nbsp;</p>
+<h4>Summary of all parameters for [show_posts] shortcode, shown with default values:</h4>
+<table style="padding-left:25px;">
+  <tr>
+    <td>cols=1</td>
+    <td>display posts in 1 to 3 columns</td>
+  </tr>
+  <tr>
+    <td>excerpt_length=''</td>
+    <td>Specify the length of automatic post excerpts in words</td>
+  </tr>
+  <tr>
+  <tr>
+    <td>filter=''</td>
+    <td>use named filter - all other parameters ignored when filter specified </td>
+  </tr>
+  <tr>
+    <td>hide_bottom_info=false</td>
+    <td>hide bottom info line </td>
+  </tr>
+  <tr>
+    <td>hide_featured_image=false</td>
+    <td>hide featured image - FI is displayed by default </td>
+  </tr>
+  <tr>
+    <td>hide_title=false</td>
+    <td>hide the title </td>
+  </tr>
+  <tr>
+    <td>hide_top_info=false</td>
+    <td>hide the top info line </td>
+  </tr>
+  <tr>
+    <td>show=full</td>
+    <td>show: title | excerpt | full | titlelist | title_featured </td>
+  </tr>
+  <tr>
+    <td>show_avatar=false</td>
+    <td>show the author avatar </td>
+  </tr>
+  <tr>
+    <td>more_msg=&quot;New More Message&quot;&nbsp;&nbsp;</td>
+    <td>replacement for Continue Reading excerpt message </td>
+  </tr>
+  <tr>
+    <td>use_paging=false</td>
+    <td>Use paging when displaying multiple posts </td>
+  </tr>
+  <tr>
+    <td>category_name=list</td>
+    <td>list of categories by slug</td>
+  </tr>
+  <tr>
+    <td>post_ids</td>
+    <td>list of posts by IDs</td>
+  </tr>
+  <tr>
+    <td>post_slug</td>
+    <td>single post by specified post slug name</td>
+  </tr>
+  <tr>
+    <td>WP_Query args</td>
+    <td>Any standard <a href="http://codex.wordpress.org/Class_Reference/WP_Query" alt="WP_Query Codex Entry" target="_blank">WP_Query</a> argument (not including those needing array()). <br />
+      Using these options directly requires fairly advanced technical understanding, and is intended for advanced users. </td>
+  </tr>
+</table>
+<p><br />
+  You don't need to supply every option when you add the <code>[show_posts]</code> to your own content.
+  You can wrap the parameter values with double or single quota ion marks if you want, but they aren't needed
+  unless the value has a space (e.g., the more_msg example).
+</p>
+<h3><a name="add_to_sidebar" id="add_to_sidebar"></a>How To Add Shortcodes to Your Content or a Sidebar</h3>
+<p>Both ATW Show Posts and ATW Show Sliders work through the standard WordPress Shortcode feature. To add a Show Post to your content, insert <strong>[show_posts filter=filter-name]</strong> into a page or post. To insert a slide show, add <strong>[show_slider name=slider-name]</strong>. To make this easier, there are<em> Add [show_posts]</em> and <em>Add [show_slider]</em> buttons above the Page/Post editor icon bar.</p>
+<p>You can also add these shortcodes to a sidebar using a standard Text Widget. Simply add the shortcode (you can copy the current settings for the shortcode from the version displayed near the top of either the &quot;Show Posts&quot; tab or the &quot;Sliders&quot; tab, then paste them into a Text Widget. Many themes an plugins already add the ability to include shortcodes in the Text Widget, but if you just see the shortcode displayed in the Text Widget when you view your site, open the &quot;Show Posts&quot; tab, and click the option at the bottom to allow the Text Widget to include shortcodes.</p>
+<p>&nbsp;</p>
+<p>The Aspen  Themeworks Show Posts Plugin and this document are &copy; 2014, Bruce E. Wampler. <a ref="http://aspenthemeworks.com">Web Site - AspenThemeworks.com</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+  </div>
+</div>
+</body>
+</html>
