@@ -39,7 +39,7 @@
 #content{
 	float: left;
 	width: 70%;
-	padding: 2.5em;
+	/*padding: 2.5em;*/
 	background-color: #FFF;
 	border-left: solid 1px #F2F2F2;
 	.post{
@@ -60,4 +60,19 @@
 	float: left;
 	width: 30%;
 	background-color: #F2F2F2;
+	/*padding: 2.5em;*/
+	#categories-2{
+		ul{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			li{
+				border-top: solid 1px #CCC;
+				line-height: 2em;
+				&:first-child{
+					border: none;
+				}
+			}
+		}
+	}
 }
