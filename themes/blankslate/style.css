@@ -123,18 +123,20 @@ nav #search #s {
 
 /* line 39, scss/partials/_desktop.scss */
 #content {
-  float: left;
+  float: none;
+  vertical-align: top;
   width: 70%;
-  /*padding: 2.5em;*/
+  padding: 2.5em;
+  display: table-cell;
   background-color: #FFF;
   border-left: solid 1px #F2F2F2;
 }
-/* line 45, scss/partials/_desktop.scss */
+/* line 47, scss/partials/_desktop.scss */
 #content .post {
   margin-top: 2em;
   border-top: solid 1px #CCC;
 }
-/* line 48, scss/partials/_desktop.scss */
+/* line 50, scss/partials/_desktop.scss */
 #content .post .postdate {
   display: block;
   text-align: center;
@@ -143,30 +145,32 @@ nav #search #s {
   width: 130px;
   float: right;
 }
-/* line 56, scss/partials/_desktop.scss */
+/* line 58, scss/partials/_desktop.scss */
 #content .post .fa {
   color: #555;
 }
 
-/* line 59, scss/partials/_desktop.scss */
+/* line 61, scss/partials/_desktop.scss */
 #sidebar {
-  float: left;
+  float: none;
+  vertical-align: top;
+  display: table-cell;
   width: 30%;
   background-color: #F2F2F2;
-  /*padding: 2.5em;*/
+  padding: 2.5em;
 }
-/* line 65, scss/partials/_desktop.scss */
+/* line 69, scss/partials/_desktop.scss */
 #sidebar #categories-2 ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-/* line 69, scss/partials/_desktop.scss */
+/* line 73, scss/partials/_desktop.scss */
 #sidebar #categories-2 ul li {
   border-top: solid 1px #CCC;
   line-height: 2em;
 }
-/* line 72, scss/partials/_desktop.scss */
+/* line 76, scss/partials/_desktop.scss */
 #sidebar #categories-2 ul li:first-child {
   border: none;
 }

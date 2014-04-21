@@ -10,10 +10,5 @@
         </footer>
     </div>
     <?php wp_footer(); ?>
-    <script type="text/javascript">
-	   jQuery(function($) {
-			$('.inner .column').equalHeightColumns();
-	   });
-	</script>
     </body>
 </html>

@@ -16,8 +16,6 @@ add_action( 'wp_enqueue_scripts', 'blankslate_load_scripts' );
 function blankslate_load_scripts()
 {
 wp_enqueue_script( 'jquery' );
-wp_register_script( 'equalheight', get_template_directory_uri() . '/js/vendor/equalheightcolumns/jquery.equalheightcolumns.js', array( 'jquery' ), '1.1' );
-wp_enqueue_script( 'equalheight' );
 }
 function my_search_form( $form ) {
     $form = '<form role="search" method="get" id="searchform" class="searchform" action="' . home_url( '/' ) . '" >

@@ -37,9 +37,11 @@
 	}
 }
 #content{
-	float: left;
+	float: none;
+	vertical-align: top;
 	width: 70%;
-	/*padding: 2.5em;*/
+	padding: 2.5em;
+	display: table-cell;
 	background-color: #FFF;
 	border-left: solid 1px #F2F2F2;
 	.post{
@@ -57,10 +59,12 @@
 	}
 }
 #sidebar{
-	float: left;
+	float: none;
+	vertical-align: top;
+	display: table-cell;
 	width: 30%;
 	background-color: #F2F2F2;
-	/*padding: 2.5em;*/
+	padding: 2.5em;
 	#categories-2{
 		ul{
 			padding: 0;
