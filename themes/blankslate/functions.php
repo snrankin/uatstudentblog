@@ -16,6 +16,8 @@ add_action( 'wp_enqueue_scripts', 'blankslate_load_scripts' );
 function blankslate_load_scripts()
 {
 wp_enqueue_script( 'jquery' );
+wp_register_script( 'equalheight', get_template_directory_uri() . '/js/vendor/equalheightcolumns/jquery.equalheightcolumns.js', array( 'jquery' ), '1.1' );
+wp_enqueue_script( 'equalheight' );
 }
 function my_search_form( $form ) {
     $form = '<form role="search" method="get" id="searchform" class="searchform" action="' . home_url( '/' ) . '" >
@@ -56,8 +58,8 @@ function blankslate_widgets_init()
 register_sidebar( array (
 'name' => __( 'Sidebar Widget Area', 'blankslate' ),
 'id' => 'primary-widget-area',
-'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-'after_widget' => "</li>",
+'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+'after_widget' => "</div>",
 'before_title' => '<h3 class="widget-title">',
 'after_title' => '</h3>',
 ) );
