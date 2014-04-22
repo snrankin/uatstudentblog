@@ -1,31 +1,29 @@
 /* line 1, scss/partials/_desktop.scss */
 #wrapper {
   width: 100%;
-  position: relative;
-  top: 60px;
 }
 
-/* line 6, scss/partials/_desktop.scss */
+/* line 4, scss/partials/_desktop.scss */
 h1 {
   font-size: 2.5em;
 }
 
-/* line 7, scss/partials/_desktop.scss */
+/* line 5, scss/partials/_desktop.scss */
 h2 {
   font-size: 2em;
 }
 
-/* line 8, scss/partials/_desktop.scss */
+/* line 6, scss/partials/_desktop.scss */
 h3 {
   font-size: 1.5em;
 }
 
-/* line 9, scss/partials/_desktop.scss */
+/* line 7, scss/partials/_desktop.scss */
 h4 {
   font-size: 1em;
 }
 
-/* line 13, scss/partials/_desktop.scss */
+/* line 11, scss/partials/_desktop.scss */
 .inner {
   *zoom: 1;
   max-width: 1200px;
@@ -38,7 +36,7 @@ h4 {
   clear: both;
 }
 
-/* line 18, scss/partials/_desktop.scss */
+/* line 16, scss/partials/_desktop.scss */
 .button, .more-button, .navigation ul li {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -48,45 +46,44 @@ h4 {
   background-color: #9d1c35;
   text-align: center;
 }
-/* line 22, scss/partials/_desktop.scss */
+/* line 20, scss/partials/_desktop.scss */
 .button a, .more-button a, .navigation ul li a {
   color: #FFF;
 }
 
-/* line 26, scss/partials/_desktop.scss */
+/* line 24, scss/partials/_desktop.scss */
 .more-button {
   width: auto;
   float: right;
   margin-top: 1em;
 }
-/* line 31, scss/partials/_desktop.scss */
+/* line 29, scss/partials/_desktop.scss */
 .more-button a {
   line-height: 2;
   margin: 0.5em;
 }
-/* line 34, scss/partials/_desktop.scss */
+/* line 32, scss/partials/_desktop.scss */
 .more-button a:after {
   content: '\f138';
   font-family: 'FontAwesome';
   margin-left: 10px;
 }
 
-/* line 41, scss/partials/_desktop.scss */
+/* line 40, scss/partials/_desktop.scss */
 #header {
   width: 100%;
-  height: 400px;
+  height: 460px;
   background: url("imgs/uat.jpg");
   background-size: cover;
 }
-/* line 46, scss/partials/_desktop.scss */
+/* line 45, scss/partials/_desktop.scss */
 #header #branding {
   height: 400px;
 }
-/* line 48, scss/partials/_desktop.scss */
+/* line 47, scss/partials/_desktop.scss */
 #header #branding #site-title {
   *zoom: 1;
-  position: relative;
-  top: 50px;
+  margin-top: 3rem;
 }
 /* line 38, ../../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #header #branding #site-title:after {
@@ -94,19 +91,30 @@ h4 {
   display: table;
   clear: both;
 }
-/* line 52, scss/partials/_desktop.scss */
+/* line 50, scss/partials/_desktop.scss */
 #header #branding #site-title img {
   float: left;
 }
+/* line 53, scss/partials/_desktop.scss */
+#header #branding #site-title h1 {
+  *zoom: 1;
+}
+/* line 38, ../../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#header #branding #site-title h1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 /* line 55, scss/partials/_desktop.scss */
-#header #branding #site-title a {
+#header #branding #site-title h1 a {
   font-family: 'AlternateGotNo3D';
   color: #F0F0F0;
   font-size: 5rem;
   text-decoration: none;
   float: left;
+  line-height: 6.125rem;
 }
-/* line 63, scss/partials/_desktop.scss */
+/* line 65, scss/partials/_desktop.scss */
 #header #branding #site-description {
   display: block;
   color: #FFF;
@@ -119,14 +127,11 @@ h4 {
   top: 50px;
 }
 
-/* line 76, scss/partials/_desktop.scss */
+/* line 78, scss/partials/_desktop.scss */
 #menu {
   *zoom: 1;
   width: 100%;
   height: 3.750em;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
   background-color: #555;
 }
 /* line 38, ../../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
@@ -135,13 +140,13 @@ h4 {
   display: table;
   clear: both;
 }
-/* line 84, scss/partials/_desktop.scss */
+/* line 83, scss/partials/_desktop.scss */
 #menu .menu-main-menu-container {
   margin: 0 auto;
   height: 3.750rem;
   float: left;
 }
-/* line 88, scss/partials/_desktop.scss */
+/* line 87, scss/partials/_desktop.scss */
 #menu .menu-main-menu-container #menu-main-menu {
   *zoom: 1;
   list-style: none;
@@ -154,12 +159,12 @@ h4 {
   display: table;
   clear: both;
 }
-/* line 93, scss/partials/_desktop.scss */
+/* line 92, scss/partials/_desktop.scss */
 #menu .menu-main-menu-container #menu-main-menu li {
   float: left;
   padding: 0 1em;
 }
-/* line 96, scss/partials/_desktop.scss */
+/* line 95, scss/partials/_desktop.scss */
 #menu .menu-main-menu-container #menu-main-menu li a {
   font-family: 'AlternateGotNo3D';
   color: #F2F2F2;
@@ -168,15 +173,19 @@ h4 {
   text-transform: uppercase;
   line-height: 3.75rem;
 }
-/* line 107, scss/partials/_desktop.scss */
+/* line 106, scss/partials/_desktop.scss */
 #menu #search {
   float: right;
   width: auto;
   display: inline-block;
+}
+
+/* line 112, scss/partials/_desktop.scss */
+#searchform {
   position: relative;
 }
-/* line 112, scss/partials/_desktop.scss */
-#menu #search .fa-search {
+/* line 114, scss/partials/_desktop.scss */
+#searchform .fa-search {
   position: absolute;
   z-index: 2;
   left: 10px;
@@ -184,8 +193,8 @@ h4 {
   line-height: 3.750rem;
   color: #CCC;
 }
-/* line 120, scss/partials/_desktop.scss */
-#menu #search #s {
+/* line 122, scss/partials/_desktop.scss */
+#searchform #s {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
@@ -197,14 +206,14 @@ h4 {
   padding-left: 30px;
 }
 
-/* line 129, scss/partials/_desktop.scss */
+/* line 130, scss/partials/_desktop.scss */
 #content {
   padding: 2.5em;
   background-color: #FFF;
   border-left: solid 1px #F2F2F2;
 }
 
-/* line 134, scss/partials/_desktop.scss */
+/* line 135, scss/partials/_desktop.scss */
 .col-2 {
   float: none;
   vertical-align: top;
@@ -212,40 +221,52 @@ h4 {
   display: table-cell;
 }
 
-/* line 140, scss/partials/_desktop.scss */
+/* line 141, scss/partials/_desktop.scss */
 .col-1 {
   width: 100%;
   float: left;
 }
 
-/* line 145, scss/partials/_desktop.scss */
+/* line 146, scss/partials/_desktop.scss */
 .homepage .post, .archive .post, .search .post {
   margin-top: 2em;
   border-top: solid 1px #CCC;
 }
-/* line 146, scss/partials/_desktop.scss */
+/* line 147, scss/partials/_desktop.scss */
 .homepage .post h2, .archive .post h2, .search .post h2 {
   margin-top: 1em;
 }
-/* line 149, scss/partials/_desktop.scss */
+/* line 150, scss/partials/_desktop.scss */
+.homepage .post .entry, .archive .post .entry, .search .post .entry {
+  margin: 2.5em 0;
+}
+/* line 152, scss/partials/_desktop.scss */
+.homepage .post .entry .moretag, .archive .post .entry .moretag, .search .post .entry .moretag {
+  display: block;
+  float: right;
+  margin-top: 1em;
+}
+/* line 158, scss/partials/_desktop.scss */
 .homepage .post .postdate, .archive .post .postdate, .search .post .postdate {
   display: block;
   text-align: center;
   background-color: #CCC;
   color: #555;
-  width: 130px;
+  max-width: 200px;
+  padding: 0 1em;
+  height: 2em;
   float: right;
   position: relative;
   top: -2em;
 }
-/* line 158, scss/partials/_desktop.scss */
+/* line 169, scss/partials/_desktop.scss */
 .homepage .post .postdate:before, .archive .post .postdate:before, .search .post .postdate:before {
   content: '\f073';
   font-family: 'FontAwesome';
-  line-height: 25px;
+  line-height: 2em;
   margin-right: 5px;
 }
-/* line 165, scss/partials/_desktop.scss */
+/* line 176, scss/partials/_desktop.scss */
 .homepage .post footer.postmetadata, .archive .post footer.postmetadata, .search .post footer.postmetadata {
   *zoom: 1;
 }
@@ -255,23 +276,23 @@ h4 {
   display: table;
   clear: both;
 }
-/* line 167, scss/partials/_desktop.scss */
+/* line 178, scss/partials/_desktop.scss */
 .homepage .post footer.postmetadata .fa, .archive .post footer.postmetadata .fa, .search .post footer.postmetadata .fa {
   color: #555;
   margin-right: 5px;
 }
-/* line 168, scss/partials/_desktop.scss */
+/* line 179, scss/partials/_desktop.scss */
 .homepage .post footer.postmetadata .author, .homepage .post footer.postmetadata .categories, .homepage .post footer.postmetadata .tags, .archive .post footer.postmetadata .author, .archive .post footer.postmetadata .categories, .archive .post footer.postmetadata .tags, .search .post footer.postmetadata .author, .search .post footer.postmetadata .categories, .search .post footer.postmetadata .tags {
   float: left;
   margin-right: 1em;
 }
 
-/* line 175, scss/partials/_desktop.scss */
+/* line 186, scss/partials/_desktop.scss */
 .navigation {
   margin: 1em 0;
   float: right;
 }
-/* line 178, scss/partials/_desktop.scss */
+/* line 189, scss/partials/_desktop.scss */
 .navigation ul {
   *zoom: 1;
   list-style: none;
@@ -284,7 +305,7 @@ h4 {
   display: table;
   clear: both;
 }
-/* line 183, scss/partials/_desktop.scss */
+/* line 194, scss/partials/_desktop.scss */
 .navigation ul li {
   background-color: #D04F68;
   color: #FFF;
@@ -293,12 +314,12 @@ h4 {
   padding: 0.5em;
   margin: 0 0.25em;
 }
-/* line 192, scss/partials/_desktop.scss */
+/* line 203, scss/partials/_desktop.scss */
 .navigation ul li.active {
   background-color: #9d1c35;
 }
 
-/* line 197, scss/partials/_desktop.scss */
+/* line 208, scss/partials/_desktop.scss */
 #sidebar {
   float: none;
   vertical-align: top;
@@ -307,55 +328,76 @@ h4 {
   background-color: #F2F2F2;
   padding: 2.5em;
 }
-/* line 204, scss/partials/_desktop.scss */
+/* line 215, scss/partials/_desktop.scss */
 #sidebar .widget-container {
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
-/* line 206, scss/partials/_desktop.scss */
+/* line 217, scss/partials/_desktop.scss */
 #sidebar #categories-2 ul, #sidebar #nav_menu-2 ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-/* line 210, scss/partials/_desktop.scss */
+/* line 221, scss/partials/_desktop.scss */
 #sidebar #categories-2 ul li, #sidebar #nav_menu-2 ul li {
   border-top: solid 1px #CCC;
   line-height: 2em;
 }
-/* line 213, scss/partials/_desktop.scss */
+/* line 224, scss/partials/_desktop.scss */
 #sidebar #categories-2 ul li:first-child, #sidebar #nav_menu-2 ul li:first-child {
   border: none;
 }
-/* line 219, scss/partials/_desktop.scss */
+/* line 230, scss/partials/_desktop.scss */
 #sidebar #text-2 {
-  margin-bottom: 3em;
+  margin-bottom: 5em;
 }
-/* line 223, scss/partials/_desktop.scss */
+/* line 233, scss/partials/_desktop.scss */
+#sidebar #post-info {
+  margin-bottom: 3em;
+  padding-bottom: 1em;
+  border-bottom: solid 1px #CCC;
+}
+/* line 237, scss/partials/_desktop.scss */
+#sidebar #post-info .entry-meta, #sidebar #post-info .entry-date, #sidebar #post-info .cat-links, #sidebar #post-info .tag-links {
+  margin-bottom: 1em;
+}
+/* line 240, scss/partials/_desktop.scss */
+#sidebar #post-info .abh_social {
+  float: left;
+  text-align: left;
+  width: 100%;
+}
+/* line 244, scss/partials/_desktop.scss */
+#sidebar #post-info .abh_social div {
+  width: auto !important;
+  margin: 0 !important;
+}
+/* line 251, scss/partials/_desktop.scss */
 #sidebar #atwkslider-whyuat-1 .slide-post {
   margin: 0;
   font-size: 0.875rem;
 }
-/* line 226, scss/partials/_desktop.scss */
+/* line 254, scss/partials/_desktop.scss */
 #sidebar #atwkslider-whyuat-1 .slide-post .entry-date {
   display: none;
 }
-/* line 227, scss/partials/_desktop.scss */
+/* line 255, scss/partials/_desktop.scss */
 #sidebar #atwkslider-whyuat-1 .slide-post .atw-entry-meta-icons .by-author {
   background: none;
   float: right;
   margin-left: 0;
 }
-/* line 231, scss/partials/_desktop.scss */
+/* line 259, scss/partials/_desktop.scss */
 #sidebar #atwkslider-whyuat-1 .slide-post .atw-entry-meta-icons .by-author .author {
   position: relative;
-  top: 190px;
+  top: 210px;
 }
-/* line 236, scss/partials/_desktop.scss */
+/* line 264, scss/partials/_desktop.scss */
 #sidebar #atwkslider-whyuat-1 .slide-post p {
   margin: 0;
   padding: 0;
 }
-/* line 239, scss/partials/_desktop.scss */
+/* line 267, scss/partials/_desktop.scss */
 #sidebar #atwkslider-whyuat-1 .slide-post p:before {
   content: '\f10d';
   font-family: FontAwesome;
@@ -364,7 +406,7 @@ h4 {
   float: left;
   margin-right: 5px;
 }
-/* line 247, scss/partials/_desktop.scss */
+/* line 275, scss/partials/_desktop.scss */
 #sidebar #atwkslider-whyuat-1 .slide-post p:after {
   content: '\f10e';
   font-family: FontAwesome;
@@ -373,7 +415,7 @@ h4 {
   margin-left: 5px;
 }
 
-/* line 259, scss/partials/_desktop.scss */
+/* line 287, scss/partials/_desktop.scss */
 #why-uat .entry {
   *zoom: 1;
   border-bottom: solid 1px #CCC;
@@ -386,12 +428,12 @@ h4 {
   display: table;
   clear: both;
 }
-/* line 264, scss/partials/_desktop.scss */
+/* line 292, scss/partials/_desktop.scss */
 #why-uat .entry .entry-photo {
   float: left;
   width: 10%;
 }
-/* line 268, scss/partials/_desktop.scss */
+/* line 296, scss/partials/_desktop.scss */
 #why-uat .entry .entry-content {
   *zoom: 1;
   float: left;
@@ -404,12 +446,12 @@ h4 {
   display: table;
   clear: both;
 }
-/* line 273, scss/partials/_desktop.scss */
+/* line 301, scss/partials/_desktop.scss */
 #why-uat .entry .entry-content .entry-author {
   float: right;
   display: block;
 }
-/* line 278, scss/partials/_desktop.scss */
+/* line 306, scss/partials/_desktop.scss */
 #why-uat .entry .entry-content p:before {
   content: '\f10d';
   font-family: FontAwesome;
@@ -418,13 +460,51 @@ h4 {
   float: left;
   margin-right: 5px;
 }
-/* line 286, scss/partials/_desktop.scss */
+/* line 314, scss/partials/_desktop.scss */
 #why-uat .entry .entry-content p:after {
   content: '\f10e';
   font-family: FontAwesome;
   color: #CCC;
   display: inline-block;
   margin-left: 5px;
+}
+
+/* line 325, scss/partials/_desktop.scss */
+#footer {
+  background-color: #555;
+  color: #FFF;
+  padding: 2em 0;
+  font-size: 0.875em;
+}
+/* line 330, scss/partials/_desktop.scss */
+#footer .inner {
+  padding: 0 2.5em;
+}
+
+/* line 334, scss/partials/_desktop.scss */
+#nav-below {
+  width: 100%;
+}
+
+/* line 338, scss/partials/_desktop.scss */
+#synved_social_share-2 div {
+  height: 40px;
+}
+/* line 340, scss/partials/_desktop.scss */
+#synved_social_share-2 div span.synved-social-container, #synved_social_share-2 div span.synved-social-container-share {
+  *zoom: 1;
+  height: 40px !important;
+}
+/* line 38, ../../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#synved_social_share-2 div span.synved-social-container:after, #synved_social_share-2 div span.synved-social-container-share:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 344, scss/partials/_desktop.scss */
+#synved_social_share-2 div span.synved-social-container .synved-social-provider-facebook:after, #synved_social_share-2 div span.synved-social-container-share .synved-social-provider-facebook:after {
+  content: '\f082';
+  font-family: 'FontAwesome';
 }
 
 /* line 3, scss/partials/_screen.scss */
@@ -454,7 +534,7 @@ body, html {
 }
 
 /* line 27, scss/partials/_screen.scss */
-h1, h2, h3, h4, h5 {
+h1, h2, h3 {
   font-weight: normal;
   margin-top: 0;
   margin-bottom: 0.5em;
@@ -463,7 +543,7 @@ h1, h2, h3, h4, h5 {
   font-family: 'AlternateGotNo3D';
 }
 /* line 34, scss/partials/_screen.scss */
-h1 a, h2 a, h3 a, h4 a, h5 a {
+h1 a, h2 a, h3 a {
   font-family: 'AlternateGotNo3D';
 }
 

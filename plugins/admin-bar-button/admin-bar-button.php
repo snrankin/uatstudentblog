@@ -3,7 +3,7 @@
  * Plugin Name: Admin Bar Button
  * Description: Hide the front end admin bar and replace it with an 'Admin bar' button. When you hover over the button, the bar appears and stays for as long as your mouse hovers over it (it'll disappear 5 seconds after you move the mouse away).
  * Author: David Gard
- * Version: 1.2.4
+ * Version: 1.2.5
  *
  * Copyright 2014 David Gard.
  *
