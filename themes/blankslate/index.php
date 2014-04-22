@@ -28,7 +28,7 @@
     	<?php endwhile; else: ?>
     	<p>Sorry, no posts matched your criteria.</p>
     <?php endif; ?>
-    <?php get_template_part( 'nav', 'below' ); ?>
+    <?php numeric_posts_nav(); ?>
 </section>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
