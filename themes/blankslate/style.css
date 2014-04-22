@@ -523,6 +523,7 @@ body, html {
   font-size: 100%;
   font-size: 16px;
   line-height: 1.5;
+  color: #555;
 }
 
 @font-face {
@@ -533,26 +534,32 @@ body, html {
   font-style: normal;
 }
 
-/* line 27, scss/partials/_screen.scss */
+/* line 28, scss/partials/_screen.scss */
 h1, h2, h3 {
   font-weight: normal;
+  color: #555;
   margin-top: 0;
   margin-bottom: 0.5em;
   line-height: 1;
   padding-top: 0;
   font-family: 'AlternateGotNo3D';
 }
-/* line 34, scss/partials/_screen.scss */
+/* line 36, scss/partials/_screen.scss */
 h1 a, h2 a, h3 a {
   font-family: 'AlternateGotNo3D';
 }
 
-/* line 38, scss/partials/_screen.scss */
+/* line 40, scss/partials/_screen.scss */
+h4, h5 {
+  color: #777;
+}
+
+/* line 43, scss/partials/_screen.scss */
 .screen-reader-text {
   display: none;
 }
 
-/* line 41, scss/partials/_screen.scss */
+/* line 46, scss/partials/_screen.scss */
 a {
   color: #9d1c35;
   text-decoration: none;
