@@ -138,6 +138,13 @@ function numeric_posts_nav() {
 	echo '</ul></div>' . "\n";
 
 }
+// Replaces the excerpt "more" text by a link
+function new_excerpt_more($more) {
+	global $post;
+	return '... <a class="moretag" href="'. get_permalink($post->ID) . '"> Read more &raquo;</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
 function blankslate_custom_pings( $comment )
 {
 $GLOBALS['comment'] = $comment;
