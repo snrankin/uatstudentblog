@@ -199,25 +199,35 @@ h4 {
 
 /* line 129, scss/partials/_desktop.scss */
 #content {
-  float: none;
-  vertical-align: top;
-  width: 70%;
   padding: 2.5em;
-  display: table-cell;
   background-color: #FFF;
   border-left: solid 1px #F2F2F2;
 }
 
-/* line 139, scss/partials/_desktop.scss */
+/* line 134, scss/partials/_desktop.scss */
+.col-2 {
+  float: none;
+  vertical-align: top;
+  width: 70%;
+  display: table-cell;
+}
+
+/* line 140, scss/partials/_desktop.scss */
+.col-1 {
+  width: 100%;
+  float: left;
+}
+
+/* line 145, scss/partials/_desktop.scss */
 .homepage .post, .archive .post, .search .post {
   margin-top: 2em;
   border-top: solid 1px #CCC;
 }
-/* line 140, scss/partials/_desktop.scss */
+/* line 146, scss/partials/_desktop.scss */
 .homepage .post h2, .archive .post h2, .search .post h2 {
   margin-top: 1em;
 }
-/* line 143, scss/partials/_desktop.scss */
+/* line 149, scss/partials/_desktop.scss */
 .homepage .post .postdate, .archive .post .postdate, .search .post .postdate {
   display: block;
   text-align: center;
@@ -228,7 +238,14 @@ h4 {
   position: relative;
   top: -2em;
 }
-/* line 153, scss/partials/_desktop.scss */
+/* line 158, scss/partials/_desktop.scss */
+.homepage .post .postdate:before, .archive .post .postdate:before, .search .post .postdate:before {
+  content: '\f073';
+  font-family: 'FontAwesome';
+  line-height: 25px;
+  margin-right: 5px;
+}
+/* line 165, scss/partials/_desktop.scss */
 .homepage .post footer.postmetadata, .archive .post footer.postmetadata, .search .post footer.postmetadata {
   *zoom: 1;
 }
@@ -238,23 +255,23 @@ h4 {
   display: table;
   clear: both;
 }
-/* line 155, scss/partials/_desktop.scss */
+/* line 167, scss/partials/_desktop.scss */
 .homepage .post footer.postmetadata .fa, .archive .post footer.postmetadata .fa, .search .post footer.postmetadata .fa {
   color: #555;
   margin-right: 5px;
 }
-/* line 156, scss/partials/_desktop.scss */
+/* line 168, scss/partials/_desktop.scss */
 .homepage .post footer.postmetadata .author, .homepage .post footer.postmetadata .categories, .homepage .post footer.postmetadata .tags, .archive .post footer.postmetadata .author, .archive .post footer.postmetadata .categories, .archive .post footer.postmetadata .tags, .search .post footer.postmetadata .author, .search .post footer.postmetadata .categories, .search .post footer.postmetadata .tags {
   float: left;
   margin-right: 1em;
 }
 
-/* line 163, scss/partials/_desktop.scss */
+/* line 175, scss/partials/_desktop.scss */
 .navigation {
   margin: 1em 0;
   float: right;
 }
-/* line 166, scss/partials/_desktop.scss */
+/* line 178, scss/partials/_desktop.scss */
 .navigation ul {
   *zoom: 1;
   list-style: none;
@@ -267,7 +284,7 @@ h4 {
   display: table;
   clear: both;
 }
-/* line 171, scss/partials/_desktop.scss */
+/* line 183, scss/partials/_desktop.scss */
 .navigation ul li {
   background-color: #D04F68;
   color: #FFF;
@@ -276,12 +293,12 @@ h4 {
   padding: 0.5em;
   margin: 0 0.25em;
 }
-/* line 180, scss/partials/_desktop.scss */
+/* line 192, scss/partials/_desktop.scss */
 .navigation ul li.active {
   background-color: #9d1c35;
 }
 
-/* line 185, scss/partials/_desktop.scss */
+/* line 197, scss/partials/_desktop.scss */
 #sidebar {
   float: none;
   vertical-align: top;
@@ -290,55 +307,55 @@ h4 {
   background-color: #F2F2F2;
   padding: 2.5em;
 }
-/* line 192, scss/partials/_desktop.scss */
+/* line 204, scss/partials/_desktop.scss */
 #sidebar .widget-container {
   margin-bottom: 2em;
 }
-/* line 194, scss/partials/_desktop.scss */
+/* line 206, scss/partials/_desktop.scss */
 #sidebar #categories-2 ul, #sidebar #nav_menu-2 ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-/* line 198, scss/partials/_desktop.scss */
+/* line 210, scss/partials/_desktop.scss */
 #sidebar #categories-2 ul li, #sidebar #nav_menu-2 ul li {
   border-top: solid 1px #CCC;
   line-height: 2em;
 }
-/* line 201, scss/partials/_desktop.scss */
+/* line 213, scss/partials/_desktop.scss */
 #sidebar #categories-2 ul li:first-child, #sidebar #nav_menu-2 ul li:first-child {
   border: none;
 }
-/* line 207, scss/partials/_desktop.scss */
+/* line 219, scss/partials/_desktop.scss */
 #sidebar #text-2 {
   margin-bottom: 3em;
 }
-/* line 211, scss/partials/_desktop.scss */
+/* line 223, scss/partials/_desktop.scss */
 #sidebar #atwkslider-whyuat-1 .slide-post {
   margin: 0;
   font-size: 0.875rem;
 }
-/* line 214, scss/partials/_desktop.scss */
+/* line 226, scss/partials/_desktop.scss */
 #sidebar #atwkslider-whyuat-1 .slide-post .entry-date {
   display: none;
 }
-/* line 215, scss/partials/_desktop.scss */
+/* line 227, scss/partials/_desktop.scss */
 #sidebar #atwkslider-whyuat-1 .slide-post .atw-entry-meta-icons .by-author {
   background: none;
   float: right;
   margin-left: 0;
 }
-/* line 219, scss/partials/_desktop.scss */
+/* line 231, scss/partials/_desktop.scss */
 #sidebar #atwkslider-whyuat-1 .slide-post .atw-entry-meta-icons .by-author .author {
   position: relative;
   top: 190px;
 }
-/* line 224, scss/partials/_desktop.scss */
+/* line 236, scss/partials/_desktop.scss */
 #sidebar #atwkslider-whyuat-1 .slide-post p {
   margin: 0;
   padding: 0;
 }
-/* line 227, scss/partials/_desktop.scss */
+/* line 239, scss/partials/_desktop.scss */
 #sidebar #atwkslider-whyuat-1 .slide-post p:before {
   content: '\f10d';
   font-family: FontAwesome;
@@ -347,8 +364,62 @@ h4 {
   float: left;
   margin-right: 5px;
 }
-/* line 235, scss/partials/_desktop.scss */
+/* line 247, scss/partials/_desktop.scss */
 #sidebar #atwkslider-whyuat-1 .slide-post p:after {
+  content: '\f10e';
+  font-family: FontAwesome;
+  color: #CCC;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/* line 259, scss/partials/_desktop.scss */
+#why-uat .entry {
+  *zoom: 1;
+  border-bottom: solid 1px #CCC;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+/* line 38, ../../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#why-uat .entry:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 264, scss/partials/_desktop.scss */
+#why-uat .entry .entry-photo {
+  float: left;
+  width: 10%;
+}
+/* line 268, scss/partials/_desktop.scss */
+#why-uat .entry .entry-content {
+  *zoom: 1;
+  float: left;
+  width: 90%;
+  padding: 1em;
+}
+/* line 38, ../../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#why-uat .entry .entry-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 273, scss/partials/_desktop.scss */
+#why-uat .entry .entry-content .entry-author {
+  float: right;
+  display: block;
+}
+/* line 278, scss/partials/_desktop.scss */
+#why-uat .entry .entry-content p:before {
+  content: '\f10d';
+  font-family: FontAwesome;
+  color: #CCC;
+  display: inline-block;
+  float: left;
+  margin-right: 5px;
+}
+/* line 286, scss/partials/_desktop.scss */
+#why-uat .entry .entry-content p:after {
   content: '\f10e';
   font-family: FontAwesome;
   color: #CCC;
@@ -361,7 +432,7 @@ h4 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, sans-serif;
 }
 
 /* line 7, scss/partials/_screen.scss */

@@ -127,13 +127,19 @@ $UAT-red: #9d1c35;
 	}
 }
 #content{
-float: none;
-	vertical-align: top;
-	width: 70%;
 	padding: 2.5em;
-	display: table-cell;
 	background-color: #FFF;
 	border-left: solid 1px #F2F2F2;
+}
+.col-2{
+	float: none;
+	vertical-align: top;
+	width: 70%;
+	display: table-cell;
+}
+.col-1{
+	width: 100%;
+	float: left;
 }
 .homepage, .archive, .search{
 	.post{
@@ -149,6 +155,12 @@ float: none;
 			float: right;
 			position: relative;
 			top: -2em;
+			&:before{
+				content: '\f073';
+				font-family: 'FontAwesome';
+				line-height: 25px;
+				margin-right: 5px;
+			}
 		}	
 		footer.postmetadata{
 			@include pie-clearfix;
@@ -224,6 +236,45 @@ float: none;
 			p{
 				margin: 0;
 				padding:0;
+				&:before{
+					content: '\f10d';
+					font-family: FontAwesome;
+					color: #CCC;
+					display: inline-block;
+					float: left;
+					margin-right: 5px;
+				}
+				&:after{
+					content: '\f10e';
+					font-family: FontAwesome;
+					color: #CCC;
+					display: inline-block;
+					margin-left: 5px;
+				}
+			}
+		}
+	}
+}
+#why-uat{
+	.entry{
+		@include pie-clearfix;
+		border-bottom: solid 1px #CCC;
+		margin-bottom: 1em;
+		padding-bottom: 1em;
+		.entry-photo{
+			float: left;
+			width: 10%;
+		}
+		.entry-content{
+			@include pie-clearfix;
+			float: left;
+			width: 90%;
+			padding: 1em;
+			.entry-author{
+				float: right;
+				display: block;
+			}
+			p{
 				&:before{
 					content: '\f10d';
 					font-family: FontAwesome;

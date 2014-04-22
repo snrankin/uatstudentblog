@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section id="content" role="main" class="column homepage">
+<section id="content" role="main" class="column homepage col-2">
 	<?php query_posts($query_string . '&showposts=3'); ?>
     	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <article class="post">

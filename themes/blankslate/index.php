@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section id="content" role="main" class="column archive">
+<section id="content" role="main" class="column archive col-2">
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <article class="post">
                 <header>
