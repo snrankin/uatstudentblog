@@ -8,22 +8,27 @@ h2{font-size: 2em;}
 h3{font-size: 1.5em;}
 h4{font-size: 1em;}
 
+$UAT-red: #9d1c35;
+
 .inner{
 	@include pie-clearfix;
 	max-width: 1200px;
 	margin: 0 auto;
 }
-.more-button{
+.button{
 	@include border-radius(5px);
-	@include filter-gradient(#9d1c35, #601112, vertical);
-	@include background-image(linear-gradient(top,  rgba(157,28,53,1) 0%,rgba(96,17,18,1) 100%));
-	background-color: rgb(157,28,53);
+	background-color: $UAT-red;
 	text-align: center;
+	a{
+		color: #FFF;
+	}
+}
+.more-button{
+	@extend .button;
 	width: auto;
 	float: right;
 	margin-top: 1em;
 	a{
-		color: #FFF;
 		line-height: 2;
 		margin: 0.5em;
 		&:after{
@@ -153,6 +158,28 @@ float: none;
 				margin-right: 1em;
 			}
 		}	
+	}
+}
+.navigation{
+	margin: 1em 0;
+	float: right;
+	ul{
+		@include pie-clearfix;
+		list-style: none;
+		margin:0;
+		padding: 0;
+		li{
+			@extend .button;
+			background-color: #D04F68;
+			color: #FFF;
+			float: left;
+			display: block;
+			padding: 0.5em;
+			margin: 0 0.25em;
+		}
+		li.active{
+			background-color: $UAT-red;
+		}
 	}
 }
 #sidebar{

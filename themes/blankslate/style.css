@@ -25,7 +25,7 @@ h4 {
   font-size: 1em;
 }
 
-/* line 11, scss/partials/_desktop.scss */
+/* line 13, scss/partials/_desktop.scss */
 .inner {
   *zoom: 1;
   max-width: 1200px;
@@ -38,51 +38,51 @@ h4 {
   clear: both;
 }
 
-/* line 16, scss/partials/_desktop.scss */
-.more-button {
+/* line 18, scss/partials/_desktop.scss */
+.button, .more-button, .navigation ul li {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF9D1C35', endColorstr='#FF601112');
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #9d1c35), color-stop(100%, #601112));
-  background-image: -webkit-linear-gradient(top, #9d1c35 0%, #601112 100%);
-  background-image: -moz-linear-gradient(top, #9d1c35 0%, #601112 100%);
-  background-image: -o-linear-gradient(top, #9d1c35 0%, #601112 100%);
-  background-image: linear-gradient(top, #9d1c35 0%, #601112 100%);
   background-color: #9d1c35;
   text-align: center;
+}
+/* line 22, scss/partials/_desktop.scss */
+.button a, .more-button a, .navigation ul li a {
+  color: #FFF;
+}
+
+/* line 26, scss/partials/_desktop.scss */
+.more-button {
   width: auto;
   float: right;
   margin-top: 1em;
 }
-/* line 25, scss/partials/_desktop.scss */
+/* line 31, scss/partials/_desktop.scss */
 .more-button a {
-  color: #FFF;
   line-height: 2;
   margin: 0.5em;
 }
-/* line 29, scss/partials/_desktop.scss */
+/* line 34, scss/partials/_desktop.scss */
 .more-button a:after {
   content: '\f138';
   font-family: 'FontAwesome';
   margin-left: 10px;
 }
 
-/* line 36, scss/partials/_desktop.scss */
+/* line 41, scss/partials/_desktop.scss */
 #header {
   width: 100%;
   height: 400px;
   background: url("imgs/uat.jpg");
   background-size: cover;
 }
-/* line 41, scss/partials/_desktop.scss */
+/* line 46, scss/partials/_desktop.scss */
 #header #branding {
   height: 400px;
 }
-/* line 43, scss/partials/_desktop.scss */
+/* line 48, scss/partials/_desktop.scss */
 #header #branding #site-title {
   *zoom: 1;
   position: relative;
@@ -94,11 +94,11 @@ h4 {
   display: table;
   clear: both;
 }
-/* line 47, scss/partials/_desktop.scss */
+/* line 52, scss/partials/_desktop.scss */
 #header #branding #site-title img {
   float: left;
 }
-/* line 50, scss/partials/_desktop.scss */
+/* line 55, scss/partials/_desktop.scss */
 #header #branding #site-title a {
   font-family: 'AlternateGotNo3D';
   color: #F0F0F0;
@@ -106,7 +106,7 @@ h4 {
   text-decoration: none;
   float: left;
 }
-/* line 58, scss/partials/_desktop.scss */
+/* line 63, scss/partials/_desktop.scss */
 #header #branding #site-description {
   display: block;
   color: #FFF;
@@ -119,7 +119,7 @@ h4 {
   top: 50px;
 }
 
-/* line 71, scss/partials/_desktop.scss */
+/* line 76, scss/partials/_desktop.scss */
 #menu {
   *zoom: 1;
   width: 100%;
@@ -135,13 +135,13 @@ h4 {
   display: table;
   clear: both;
 }
-/* line 79, scss/partials/_desktop.scss */
+/* line 84, scss/partials/_desktop.scss */
 #menu .menu-main-menu-container {
   margin: 0 auto;
   height: 3.750rem;
   float: left;
 }
-/* line 83, scss/partials/_desktop.scss */
+/* line 88, scss/partials/_desktop.scss */
 #menu .menu-main-menu-container #menu-main-menu {
   *zoom: 1;
   list-style: none;
@@ -154,12 +154,12 @@ h4 {
   display: table;
   clear: both;
 }
-/* line 88, scss/partials/_desktop.scss */
+/* line 93, scss/partials/_desktop.scss */
 #menu .menu-main-menu-container #menu-main-menu li {
   float: left;
   padding: 0 1em;
 }
-/* line 91, scss/partials/_desktop.scss */
+/* line 96, scss/partials/_desktop.scss */
 #menu .menu-main-menu-container #menu-main-menu li a {
   font-family: 'AlternateGotNo3D';
   color: #F2F2F2;
@@ -168,14 +168,14 @@ h4 {
   text-transform: uppercase;
   line-height: 3.75rem;
 }
-/* line 102, scss/partials/_desktop.scss */
+/* line 107, scss/partials/_desktop.scss */
 #menu #search {
   float: right;
   width: auto;
   display: inline-block;
   position: relative;
 }
-/* line 107, scss/partials/_desktop.scss */
+/* line 112, scss/partials/_desktop.scss */
 #menu #search .fa-search {
   position: absolute;
   z-index: 2;
@@ -184,7 +184,7 @@ h4 {
   line-height: 3.750rem;
   color: #CCC;
 }
-/* line 115, scss/partials/_desktop.scss */
+/* line 120, scss/partials/_desktop.scss */
 #menu #search #s {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -197,7 +197,7 @@ h4 {
   padding-left: 30px;
 }
 
-/* line 124, scss/partials/_desktop.scss */
+/* line 129, scss/partials/_desktop.scss */
 #content {
   float: none;
   vertical-align: top;
@@ -208,16 +208,16 @@ h4 {
   border-left: solid 1px #F2F2F2;
 }
 
-/* line 134, scss/partials/_desktop.scss */
+/* line 139, scss/partials/_desktop.scss */
 .homepage .post, .archive .post, .search .post {
   margin-top: 2em;
   border-top: solid 1px #CCC;
 }
-/* line 135, scss/partials/_desktop.scss */
+/* line 140, scss/partials/_desktop.scss */
 .homepage .post h2, .archive .post h2, .search .post h2 {
   margin-top: 1em;
 }
-/* line 138, scss/partials/_desktop.scss */
+/* line 143, scss/partials/_desktop.scss */
 .homepage .post .postdate, .archive .post .postdate, .search .post .postdate {
   display: block;
   text-align: center;
@@ -228,7 +228,7 @@ h4 {
   position: relative;
   top: -2em;
 }
-/* line 148, scss/partials/_desktop.scss */
+/* line 153, scss/partials/_desktop.scss */
 .homepage .post footer.postmetadata, .archive .post footer.postmetadata, .search .post footer.postmetadata {
   *zoom: 1;
 }
@@ -238,18 +238,50 @@ h4 {
   display: table;
   clear: both;
 }
-/* line 150, scss/partials/_desktop.scss */
+/* line 155, scss/partials/_desktop.scss */
 .homepage .post footer.postmetadata .fa, .archive .post footer.postmetadata .fa, .search .post footer.postmetadata .fa {
   color: #555;
   margin-right: 5px;
 }
-/* line 151, scss/partials/_desktop.scss */
+/* line 156, scss/partials/_desktop.scss */
 .homepage .post footer.postmetadata .author, .homepage .post footer.postmetadata .categories, .homepage .post footer.postmetadata .tags, .archive .post footer.postmetadata .author, .archive .post footer.postmetadata .categories, .archive .post footer.postmetadata .tags, .search .post footer.postmetadata .author, .search .post footer.postmetadata .categories, .search .post footer.postmetadata .tags {
   float: left;
   margin-right: 1em;
 }
 
-/* line 158, scss/partials/_desktop.scss */
+/* line 163, scss/partials/_desktop.scss */
+.navigation {
+  margin: 1em 0;
+  float: right;
+}
+/* line 166, scss/partials/_desktop.scss */
+.navigation ul {
+  *zoom: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 38, ../../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.navigation ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 171, scss/partials/_desktop.scss */
+.navigation ul li {
+  background-color: #D04F68;
+  color: #FFF;
+  float: left;
+  display: block;
+  padding: 0.5em;
+  margin: 0 0.25em;
+}
+/* line 180, scss/partials/_desktop.scss */
+.navigation ul li.active {
+  background-color: #9d1c35;
+}
+
+/* line 185, scss/partials/_desktop.scss */
 #sidebar {
   float: none;
   vertical-align: top;
@@ -258,55 +290,55 @@ h4 {
   background-color: #F2F2F2;
   padding: 2.5em;
 }
-/* line 165, scss/partials/_desktop.scss */
+/* line 192, scss/partials/_desktop.scss */
 #sidebar .widget-container {
   margin-bottom: 2em;
 }
-/* line 167, scss/partials/_desktop.scss */
+/* line 194, scss/partials/_desktop.scss */
 #sidebar #categories-2 ul, #sidebar #nav_menu-2 ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-/* line 171, scss/partials/_desktop.scss */
+/* line 198, scss/partials/_desktop.scss */
 #sidebar #categories-2 ul li, #sidebar #nav_menu-2 ul li {
   border-top: solid 1px #CCC;
   line-height: 2em;
 }
-/* line 174, scss/partials/_desktop.scss */
+/* line 201, scss/partials/_desktop.scss */
 #sidebar #categories-2 ul li:first-child, #sidebar #nav_menu-2 ul li:first-child {
   border: none;
 }
-/* line 180, scss/partials/_desktop.scss */
+/* line 207, scss/partials/_desktop.scss */
 #sidebar #text-2 {
   margin-bottom: 3em;
 }
-/* line 184, scss/partials/_desktop.scss */
+/* line 211, scss/partials/_desktop.scss */
 #sidebar #atwkslider-whyuat-1 .slide-post {
   margin: 0;
   font-size: 0.875rem;
 }
-/* line 187, scss/partials/_desktop.scss */
+/* line 214, scss/partials/_desktop.scss */
 #sidebar #atwkslider-whyuat-1 .slide-post .entry-date {
   display: none;
 }
-/* line 188, scss/partials/_desktop.scss */
+/* line 215, scss/partials/_desktop.scss */
 #sidebar #atwkslider-whyuat-1 .slide-post .atw-entry-meta-icons .by-author {
   background: none;
   float: right;
   margin-left: 0;
 }
-/* line 192, scss/partials/_desktop.scss */
+/* line 219, scss/partials/_desktop.scss */
 #sidebar #atwkslider-whyuat-1 .slide-post .atw-entry-meta-icons .by-author .author {
   position: relative;
   top: 190px;
 }
-/* line 197, scss/partials/_desktop.scss */
+/* line 224, scss/partials/_desktop.scss */
 #sidebar #atwkslider-whyuat-1 .slide-post p {
   margin: 0;
   padding: 0;
 }
-/* line 200, scss/partials/_desktop.scss */
+/* line 227, scss/partials/_desktop.scss */
 #sidebar #atwkslider-whyuat-1 .slide-post p:before {
   content: '\f10d';
   font-family: FontAwesome;
@@ -315,7 +347,7 @@ h4 {
   float: left;
   margin-right: 5px;
 }
-/* line 208, scss/partials/_desktop.scss */
+/* line 235, scss/partials/_desktop.scss */
 #sidebar #atwkslider-whyuat-1 .slide-post p:after {
   content: '\f10e';
   font-family: FontAwesome;
