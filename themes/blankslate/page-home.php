@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section id="content" role="main" class="column">
+<section id="content" role="main" class="column homepage">
 	<?php query_posts($query_string . '&showposts=3'); ?>
     	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <article class="post">
@@ -25,6 +25,7 @@
     	<?php endwhile; else: ?>
     	<p>Sorry, no posts matched your criteria.</p>
     <?php endif; ?>
+    <div class="more-button"><a href="<?php echo get_page_link(1235); ?>">see more posts</a></div>
 </section>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

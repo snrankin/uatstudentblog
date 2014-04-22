@@ -61,6 +61,14 @@ register_sidebar( array (
 'before_title' => '<h3 class="widget-title">',
 'after_title' => '</h3>',
 ) );
+register_sidebar( array (
+'name' => 'Single Post Sidebar',
+'id' => 'single-post-sidebar',
+'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+'after_widget' => "</div>",
+'before_title' => '<h3 class="widget-title">',
+'after_title' => '</h3>',
+) );
 }
 function blankslate_custom_pings( $comment )
 {

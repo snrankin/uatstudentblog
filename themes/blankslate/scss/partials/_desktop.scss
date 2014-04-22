@@ -1,50 +1,138 @@
-@import "navbar";
-
 #wrapper{
 	width: 100%;
+	position: relative;
+	top:60px;
 }
+h1{font-size: 2.5em;}
+h2{font-size: 2em;}
+h3{font-size: 1.5em;}
+h4{font-size: 1em;}
 
 .inner{
 	@include pie-clearfix;
 	max-width: 1200px;
 	margin: 0 auto;
 }
+.more-button{
+	@include border-radius(5px);
+	@include filter-gradient(#9d1c35, #601112, vertical);
+	@include background-image(linear-gradient(top,  rgba(157,28,53,1) 0%,rgba(96,17,18,1) 100%));
+	background-color: rgb(157,28,53);
+	text-align: center;
+	width: auto;
+	float: right;
+	margin-top: 1em;
+	a{
+		color: #FFF;
+		line-height: 2;
+		margin: 0.5em;
+		&:after{
+			content: '\f138';
+			font-family: 'FontAwesome';
+			margin-left: 10px;
+		}
+	}
+}
 #header{
 	width: 100%;
 	height: 400px;
 	background: url('imgs/uat.jpg');
 	background-size: cover;
-	#site-title{
-		a{
-			font-family: 'AlternateGotNo3D';
-			color: #F0F0F0;
-			font-size: 5em;
-			text-decoration: none;
+	#branding{
+		height: 400px;
+		#site-title{
+		@include pie-clearfix;
+		position: relative;
+		top: 50px;
+			img{
+				float: left;
+			}
+			a{
+				font-family: 'AlternateGotNo3D';
+				color: #F0F0F0;
+				font-size: 5rem;
+				text-decoration: none;
+				float: left;
+			}
+		}
+		#site-description{
+			display: block;
+			color: #FFF;
+			font-size: 1.5rem;
+			padding: 0.5rem 1rem;
+			background-color: #000;
+			opacity: .75;
+			width: auto;
 			position: relative;
-			top: 100px;
+			top: 50px;
 		}
 	}
-	#site-description{
-		display: block;
-		color: #FFF;
-		font-size: 1.5em;
-		padding: 0.5em 1em;
-		position: relative;
-		top: 150px;
-		background-color: #000;
-		opacity: .75;
+}
+#menu{
+	@include pie-clearfix;
+	width: 100%;
+	height: 3.750em;
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	background-color: #555;
+	.menu-main-menu-container{
+		margin: 0 auto;
+		height: 3.750rem;
+		float: left;
+		#menu-main-menu{
+			@include pie-clearfix;
+			list-style: none;
+			margin: 0; 
+			padding: 0;
+			li{
+				float: left;
+				padding: 0 1em;
+				a{
+					font-family: 'AlternateGotNo3D';
+					color: #F2F2F2;
+					text-decoration: none;
+					font-size: 1.5em;
+					text-transform: uppercase;
+					line-height: 3.750rem
+				}
+			}
+		}
+	}
+	#search{
+		float: right;
 		width: auto;
+		display: inline-block;
+		position: relative;
+		.fa-search{
+			position: absolute;
+			z-index: 2;
+			left: 10px;
+			font-size: 1.25em;
+			line-height: 3.750rem;
+			color: #CCC;
+		}
+		#s{
+			@include border-radius(20px);
+			height: 30px;
+			margin: 15px 0;
+			width: 200px;
+			padding-left: 30px;
+		}
 	}
 }
 #content{
-	float: none;
+float: none;
 	vertical-align: top;
 	width: 70%;
 	padding: 2.5em;
 	display: table-cell;
 	background-color: #FFF;
 	border-left: solid 1px #F2F2F2;
+}
+.homepage, .archive, .search{
 	.post{
+		h2{ margin-top: 1em;}
 		margin-top: 2em;
 		border-top: solid 1px #CCC;
 		.postdate{
@@ -54,8 +142,17 @@
 			color: #555;
 			width: 130px;
 			float: right;
-		}
-		.fa {color: #555;}		
+			position: relative;
+			top: -2em;
+		}	
+		footer.postmetadata{
+			@include pie-clearfix;
+			.fa {color: #555; margin-right: 5px;}
+			.author, .categories, .tags{
+				float: left;
+				margin-right: 1em;
+			}
+		}	
 	}
 }
 #sidebar{
@@ -65,7 +162,8 @@
 	width: 30%;
 	background-color: #F2F2F2;
 	padding: 2.5em;
-	#categories-2{
+	.widget-container{margin-bottom: 2em;}
+	#categories-2, #nav_menu-2{
 		ul{
 			padding: 0;
 			margin: 0;
@@ -75,6 +173,44 @@
 				line-height: 2em;
 				&:first-child{
 					border: none;
+				}
+			}
+		}
+	}
+	#text-2{
+		margin-bottom: 3em;
+	}
+	#atwkslider-whyuat-1{
+		.slide-post{
+			margin: 0;
+			font-size: 0.875rem;
+			.entry-date{display: none;}
+			.atw-entry-meta-icons .by-author{
+				background: none;
+				float: right;
+				margin-left: 0;
+				.author{
+					position: relative;
+					top: 190px;
+				}
+			}
+			p{
+				margin: 0;
+				padding:0;
+				&:before{
+					content: '\f10d';
+					font-family: FontAwesome;
+					color: #CCC;
+					display: inline-block;
+					float: left;
+					margin-right: 5px;
+				}
+				&:after{
+					content: '\f10e';
+					font-family: FontAwesome;
+					color: #CCC;
+					display: inline-block;
+					margin-left: 5px;
 				}
 			}
 		}
